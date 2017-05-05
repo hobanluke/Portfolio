@@ -296,12 +296,12 @@ h6 {
 }
 
 .bottom-footer-content{
-    padding-top: 0pt;
+    bottom: 40px;
     display: inline-block;
-    position: relative;
+    position: fixed;
     float: left;
-    font-size: 15px;
-    left: 25px;
+    font-size: 14px;
+    left: 40px;
     width: 250px;
     opacity: 0;
     color: #999;
@@ -317,10 +317,10 @@ h6 {
     opacity: 1;
     -webkit-transform: translate(0%,0vh);
     transform: translate(0%,0vh); 
-    -webkit-transition: 1.3s  cubic-bezier(0.86, 0, 0.07, 1); 
-    transition: 1.3s  cubic-bezier(0.86, 0, 0.07, 1);
-    -webkit-transition: 1.3s   cubic-bezier(0.86, 0, 0.07, 1);
-    -moz-transition: 1.3s   cubic-bezier(0.86, 0, 0.07, 1);
+    -webkit-transition: 1s  cubic-bezier(0.86, 0, 0.07, 1); 
+    transition: 1s  cubic-bezier(0.86, 0, 0.07, 1);
+    -webkit-transition: 1s   cubic-bezier(0.86, 0, 0.07, 1);
+    -moz-transition: 1s   cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .bottom-footer-credit{
@@ -415,7 +415,7 @@ h6 {
     top: 25px;
     display: block;
     color: #000;
-    right: 10%;
+    right: 15%;
     -webkit-transition: all 1s  ease;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
