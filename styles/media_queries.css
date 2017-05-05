@@ -1,12 +1,12 @@
 @media  (max-width:768px) {
    .introduction-header{
     position: fixed;
-    top: 50px;
+    top: 200px;
     display: block;
     color: #000;
     right: 53%;
-    -webkit-transform: translate(50%) rotate(-0deg);
-    transform: translate(50%) rotate(-0deg);
+    -webkit-transform: translate(50%) rotate(-45deg);
+    transform: translate(50%) rotate(-45deg);
     -webkit-transition: all 1s  ease;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
@@ -14,7 +14,7 @@
 h4 {
     font-family: Times New Roman, Times, serif;
     
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.4em;
     font-weight: 400;
 }
@@ -25,7 +25,7 @@ h4 {
     left: 25px;
     width: 100%;
     margin-bottom: 10vh;
-    margin-top: 80vh;
+    margin-top: 70vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -42,13 +42,13 @@ h4 {
     display: inline-block;
     position: relative;
     float: left;
-    font-size: 15px;
+    font-size: 12px;
     left: 0px;
-    width: 250px;
+    width: 230px;
     opacity: 1;
     color: #999;
-    -webkit-transform: translate(0%, 0vh);
-    transform: translate(0%, 0vh); 
+    -webkit-transform: translate(0%, 40vh);
+    transform: translate(0%, 40vh); 
     -webkit-transition: .3s  cubic-bezier(0.86, 0, 0.07, 1); 
     transition: .3s  cubic-bezier(0.86, 0, 0.07, 1);
     -webkit-transition: .3s   cubic-bezier(0.86, 0, 0.07, 1);
