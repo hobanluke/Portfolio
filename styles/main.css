@@ -302,9 +302,9 @@ h6 {
     float: left;
     font-size: 14px;
     left: 40px;
-    width: 360px;
+    width: 290px;
     opacity: 0;
-/*    color: #111;*/
+    color: #333;
     -webkit-transform: translate(0%, 10vh);
     transform: translate(0%, 10vh); 
     -webkit-transition: .3s  cubic-bezier(0.86, 0, 0.07, 1); 
