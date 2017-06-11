@@ -9,12 +9,12 @@
 		// show pin state
 		function updateBox (e) {
 			if (e.type == "enter") {
-                $(".bottom-footer-header").toggleClass('open');
                 $(".bottom-footer-content").toggleClass('open');
+                $(".bottom-footer-content2").toggleClass('open');                
                 $(".bottom-footer-credit").toggleClass('open');
 			} else {
-                $(".bottom-footer-header").toggleClass('open');
                 $(".bottom-footer-content").toggleClass('open');
+                $(".bottom-footer-content2").toggleClass('open');                
                 $(".bottom-footer-credit").toggleClass('open');
 			}
 		}
