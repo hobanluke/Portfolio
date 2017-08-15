@@ -300,11 +300,11 @@ h6 {
     display: inline-block;
     position: fixed;
     float: left;
-    font-size: 14px;
+    font-size: 13px;
     left: 40px;
-    width: 290px;
+    width: 310px;
     opacity: 0;
-    color: #333;
+    color: #666;
     -webkit-transform: translate(0%, 10vh);
     transform: translate(0%, 10vh); 
     -webkit-transition: .3s  cubic-bezier(0.86, 0, 0.07, 1); 
