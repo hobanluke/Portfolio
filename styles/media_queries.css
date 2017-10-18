@@ -31,14 +31,14 @@ h4 {
     display: flex;
     position: fixed;
     float: left;
-    min-height: 100px;
+    min-height: 50px;
     transition: 2.3s   cubic-bezier(0.86, 0, 0.07, 1); 
     -webkit-transition: 2.3s   cubic-bezier(0.86, 0, 0.07, 1); 
     -moz-transition: 2.3s   cubic-bezier(0.86, 0, 0.07, 1); 
 }
 
 .bottom-footer-content{
-    padding-top: 0pt;
+    padding-top: 0;
     display: inline-block;
     position: relative;
     float: left;
