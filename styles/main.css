@@ -141,6 +141,7 @@ html {
         font-size: calc(1.5px + ((.073333333333333vw - 1.2px) * .4))
     }
 }
+/*
 
 @font-face {
     font-family: 'JHA Times Now';
@@ -149,6 +150,15 @@ html {
     font-style: normal;
     font-weight: 500;
     }
+*/
+/*
+#element::-webkit-scrollbar { 
+    display: none; 
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+*/
 @font-face {
     font-family: 'Neue Haas Grotesk Text Pro';
     src: url('/assets/NHaasGroteskTXPro-65Md.woff2'); 
@@ -167,7 +177,7 @@ h1 {
 h2 {
     font-family: 'Neue Haas Grotesk Text Pro', "Helvetica", "Arial", sans-serif;
     font-weight: 600;
-    letter-spacing: -0.0px;
+    letter-spacing: -0.04px;
     line-height: 13px;
     font-size: 12px;
     color: #fff;
@@ -176,7 +186,7 @@ h2 {
 h3 {
     font-family: "Neue Haas Grotesk Text Pro", "Helvetica", "Arial", sans-serif;
     font-weight: 600;
-    letter-spacing: -0.0px;
+    letter-spacing: -0.04px;
     line-height: 14px;
     font-size: 12px;
     color: #666;
@@ -239,7 +249,7 @@ p:first-of-type {
     margin-left: 10px;
     margin-top: 340px;
     position: absolute;
-    color: #fff;
+    color: #eee;
 }
 .headering-logo span{
     margin-left: -27px;
