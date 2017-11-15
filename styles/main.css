@@ -251,8 +251,10 @@ p:first-of-type {
     position: absolute;
     color: #eee;
 }
+
 .headering-logo span{
     margin-left: -27px;
+    display: inline-block;
 }
 .headering-logo2{
     float: left;
