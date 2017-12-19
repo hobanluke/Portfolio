@@ -77,7 +77,7 @@ a {
 }
 
 .open-link{
-    cursor: e-resize
+    cursor: pointer;
 }
 
 q:after, q:before {
@@ -330,6 +330,12 @@ p:first-of-type {
     position: relative;
     z-index: 12;
 }
+
+/*
+#fearful-harmony{
+    padding-top: 50px;
+}
+*/
 
 img {
     height: auto;
