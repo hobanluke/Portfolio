@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url('/assets/NHaasGroteskTXPro-65Md.woff2'); 
+    font-style: normal;
+    font-weight: 600;
+}
+
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote,
 body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog,
 div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form,
@@ -150,28 +157,12 @@ html {
         font-size: calc(1.5px + ((.073333333333333vw - 1.2px) * .4))
     }
 }
-/*
 
-@font-face {
-    font-family: 'JHA Times Now';
-    src: url('/assets/JHATimesNow-Light.woff'); 
-    src: url('/assets/JHATimesNow-Light.woff'); 
-    font-style: normal;
-    font-weight: 500;
-    }
-*/
 #element::-webkit-scrollbar { 
     display: none; 
 }
 ::-webkit-scrollbar { 
     display: none; 
-}
-@font-face {
-    font-family: 'Neue Haas Grotesk Text Pro';
-    src: url('/assets/NHaasGroteskTXPro-65Md.woff2'); 
-    src: url('/assets/NHaasGroteskTXPro-65Md.woff2'); 
-    font-style: normal;
-    font-weight: 600;
 }
 
 h1 {
