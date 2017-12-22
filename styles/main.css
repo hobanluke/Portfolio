@@ -5,6 +5,30 @@
     font-weight: 600;
 }
 
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #fff;
+  position: fixed;
+  z-index: 200000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 1px;
+}
+
+ 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote,
 body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog,
 div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form,
