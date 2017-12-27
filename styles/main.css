@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'Neue Haas Grotesk Text Pro';
-    src: url('/assets/NHaasGroteskTXPro-65Md.woff2'); 
-    font-style: normal;
-    font-weight: 600;
-}
  
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote,
 body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog,
@@ -296,7 +290,9 @@ p:first-of-type {
 .footer{
     margin-bottom: 10px;
     margin-left: 20px;
+    width: 85%;
 }
+
 .work-content{
     position: relative;
     margin-top: 5px;
