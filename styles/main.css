@@ -78,7 +78,7 @@ a {
 }
 
 .open-link{
-    cursor: pointer;
+    cursor: alias;
 }
 
 q:after, q:before {
