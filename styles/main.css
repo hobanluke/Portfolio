@@ -293,11 +293,13 @@ p:first-of-type {
     width: 85%;
 }
 
-.work-content{
+/*
+.work-content #fearful-harmony{
     position: relative;
-    margin-top: 5px;
+    margin-top: -50px;
     
 }
+*/
 
 #triangle-up {
     margin-top: 20px;
@@ -312,15 +314,16 @@ p:first-of-type {
     float: left;
     width: 250px;
     margin-top: 1000px;
-    margin-bottom: 0px;
     margin-left: 920px;
     position: relative;
     z-index: 12;
+    margin-bottom: -60px;
 }
 
 /*
 #fearful-harmony{
-    padding-top: 50px;
+    position: relative;
+    margin-top: -50px;
 }
 */
 
@@ -466,7 +469,7 @@ iframe.bw:hover {
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
+	padding-top: 0px;
 	height: 0;
 }
 .videoWrapper iframe {
