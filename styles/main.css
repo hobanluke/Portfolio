@@ -317,7 +317,16 @@ p:first-of-type {
     margin-left: 920px;
     position: relative;
     z-index: 12;
-    margin-bottom: -60px;
+}
+
+.showreel{
+    float: left;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 920px;
+    position: relative;
+    z-index: 12;
+    bottom: -30px;
 }
 
 /*
