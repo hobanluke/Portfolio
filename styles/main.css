@@ -152,14 +152,14 @@ html {
     }
 }
 
-/*
 #element::-webkit-scrollbar { 
     display: none; 
 }
 ::-webkit-scrollbar { 
     display: none; 
 }
-*/
+
+
 
 h1 {
     font-family:  'Neue Haas Grotesk Text Pro', "Helvetica", "Arial", sans-serif;
