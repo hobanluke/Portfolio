@@ -64,7 +64,7 @@ $(".tooltip").tooltip({
     content: "<h2>Open</h2>",
             show: { effect: "false"},
             hide: { effect: "false"},
-            position: { my: "left+25 top", at: "right center" },
+            position: { my: "left+15 top", at: "right center" },
 });
 
 
@@ -72,7 +72,7 @@ $(".popup-background").tooltip({
     content: "<h2>Close</h2>",
             show: { effect: "false"},
             hide: { effect: "false"},
-            position: { my: "left+25 top", at: "right center" },
+            position: { my: "left+15 top", at: "right center" },
 });
 
 $(document).on('mousemove', function(e){
@@ -263,8 +263,8 @@ if (touch) { // remove all :hover stylesheets
 
  //-----Cursor loader -----//
 
-//$("body").addClass("load");
-//
-//window.onload = function () {
-//$("body").removeClass("load");
-//}
+$("body").addClass("load");
+
+window.onload = function () {
+$("body").removeClass("load");
+}
