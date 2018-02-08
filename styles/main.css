@@ -447,6 +447,7 @@ p:first-of-type {
     opacity: 0;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .popup-section.open{
@@ -627,7 +628,7 @@ p:first-of-type {
 
 .showreel{
     float: left;
-    width: 250px;
+/*    width: 250px;*/
     margin-top: 900px;
     margin-left: 920px;
     position: relative;
