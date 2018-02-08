@@ -985,11 +985,13 @@ progress[value]::-webkit-progress-bar {
     -webkit-transition: opacity 0.1s ease;
     transition: opacity 0.1s ease;
     visibility: none;
+    display: none;
 }
 
 .your_div_id.open {
     opacity: 1;
     visibility: visible;
+    display: block;
 }
 
 #moblie{

@@ -19,6 +19,7 @@ h1 {
 .your_div_id.open {
     opacity: 0;
     visibility: none;
+    display: none;
 }     
 .filter{
     opacity: 0;   
@@ -176,8 +177,8 @@ display: none;
 .your_div_id.open {
     opacity: 0;
     visibility: none;
-}    
-
+    display: none;
+} 
 .headering-logo2{
     margin-left: 10px;
 }
@@ -282,6 +283,7 @@ h1 {
 .your_div_id.open {
     opacity: 0;
     visibility: none;
+    display: none;
 } 
 /*
 #moblie{
