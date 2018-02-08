@@ -24,7 +24,13 @@ h1 {
     opacity: 0;   
     margin-top: 675px;
 }  
+.ui-tooltip {
+display: none;
+}
+body .ui-tooltip {
+display: none;
 
+} 
 .showreel{
     margin-top: -175px;
     margin-left: 220px;
@@ -142,7 +148,13 @@ h1 {
     margin-left: -7px;
 }  
 */
-  
+.ui-tooltip {
+display: none;
+}
+body .ui-tooltip {
+display: none;
+
+} 
 .work-content{
     margin-top: 720px;
     
@@ -285,7 +297,13 @@ h1 {
 }
 */
     
-    
+.ui-tooltip {
+display: none;
+}
+body .ui-tooltip {
+display: none;
+
+} 
 .filter{
     opacity: 0;   
     margin-top: 675px;
@@ -417,7 +435,13 @@ h1 {
 .filter{
     margin-left: 290px;
 }   
-    
+.ui-tooltip {
+display: none;
+}
+body .ui-tooltip {
+display: none;
+
+}  
 .showreel{
     margin-top: 850px;
     margin-left: 290px;
@@ -509,7 +533,13 @@ h1 {
     opacity: 0;
     visibility: none;
 }
-    
+.ui-tooltip {
+display: none;
+}
+body .ui-tooltip {
+display: none;
+
+}   
 .filter{
     margin-left: 290px;
 }   
@@ -608,7 +638,13 @@ h1 {
 .icon-play:before {
     width: 200px;
 }
-  
+.ui-tooltip {
+display: none;
+}
+body .ui-tooltip {
+display: none;
+
+} 
 .your_div_id.open {
     opacity: 0;
     visibility: none;

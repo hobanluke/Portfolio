@@ -1410,6 +1410,7 @@ body .ui-tooltip {
 
 }
 */
+/*
 .tooltip-showreel{
     cursor: none;
     background: rgba(0,0,0,0); !important
@@ -1423,6 +1424,7 @@ body .ui-tooltip {
     -webkit-transition: 0s;
     transition: 0s;    
 }
+*/
 
 .ui-widget-shadow{
     display: none;
@@ -1441,12 +1443,7 @@ body .ui-tooltip {
     border-radius: 5px;
     -webkit-box-shadow: 0 1px 2px rgba(100,100,100,.75);
     box-shadow: 0 1px 2px rgba(100,100,100,.75);
-        background: rgba(10,10,10,1);
-/*
-    -webkit-transition: .075s;
-    transition: .075s;
-*/
-    
-/*    mix-blend-mode: difference;*/
+    background: rgba(10,10,10,1);
+
 }
 
