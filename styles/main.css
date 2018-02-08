@@ -28,7 +28,6 @@ body, html {
 
 html.open{
     overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 /*
@@ -88,6 +87,7 @@ a {
 
 .open-link{
     cursor: pointer;
+    cursor: none;
 }
 
 q:after, q:before {
@@ -473,7 +473,7 @@ p:first-of-type {
     width: 100vw;
     background: rgba(0,0,0,.95);
     z-index: 0;
-    cursor: pointer;
+    cursor: none;
 }
 
 .headering-logo-popup{
@@ -832,6 +832,7 @@ iframe.bw:hover {
     margin-left: 20px;
 /*    margin-top: 75px;*/
     display: block;
+    background-color: red;
 }
 
 @media (min-width:0px) {
@@ -999,4 +1000,63 @@ progress[value]::-webkit-progress-bar {
 }
 #moblie-hide{
     display: visible;
+}
+
+
+
+
+.close{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 111111111111;
+    pointer-events: none;
+    cursor: none;
+    opacity: 0;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    content: url(../assets/close.svg);
+    -webkit-transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease;
+    visibility: none;
+    display: none;
+}
+
+.close.open{
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+.tab-open{
+/*
+    width: 40px;
+    height: 40px;
+*/
+    position: absolute;
+    z-index: 111111111111;
+    pointer-events: none;
+    cursor: none;
+    opacity: 0;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+/*    content: url(../assets/open-tab.svg);*/
+    -webkit-transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease;
+    visibility: none;
+    display: none;
+        pointer-events: none;
+    max-width: 100px;
+    height: auto;
+    padding: 5px 7px 6px 7px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(100,100,100,.25);
+    box-shadow: 0 1px 1px rgba(100,100,100,.25);
+    background: rgba(0,0,0,1);   
+}
+
+.tab-open.open{
+    opacity: 1;
+    visibility: visible;
+    display: block;
 }

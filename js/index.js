@@ -18,7 +18,7 @@ $("#video-container").click(function() {
     var offset = -20; 
 
     $('html, body').animate({
-        scrollTop: $("#video-container").offset().top + offset
+        scrollTop: $("").offset().top + offset
     }, 300);
   return false;
 });
@@ -59,21 +59,21 @@ $('.popup-section').click(function() {
 //            content: '<img src="/assets/play.svg" />',        
 //        });
 
+//
+//$(".tooltip").tooltip({
+//    content: "<h2>Open</h2>",
+//            show: { effect: "false"},
+//            hide: { effect: "false"},
+//            position: { my: "left+15 top", at: "right center" },
+//});
 
-$(".tooltip").tooltip({
-    content: "<h2>Open</h2>",
-            show: { effect: "false"},
-            hide: { effect: "false"},
-            position: { my: "left+15 top", at: "right center" },
-});
 
-
-$(".popup-background").tooltip({
-    content: "<h2>Close</h2>",
-            show: { effect: "false"},
-            hide: { effect: "false"},
-            position: { my: "left+15 top", at: "right center" },
-});
+//$(".popup-background").tooltip({
+//    content: "<h2>Close</h2>",
+//            show: { effect: "false"},
+//            hide: { effect: "false"},
+//            position: { my: "left+15 top", at: "right center" },
+//});
 
 $(document).on('mousemove', function(e){
     $('#your_div_id').css({
@@ -89,33 +89,35 @@ $('#video-container').hover(function() {
 
 
 
+$(document).on('mousemove', function(e){
+    $('#close').css({
+       left:  e.pageX,
+       top:   e.pageY
+    });
+});
+
+$('.popup-background').hover(function() {
+   $(this).toggleClass('active');
+    $('.close').toggleClass('open');
+  });
 
 
-//$(function() {
-//    $('#video').tooltip({
-//        items: '.tooltip-showreel',
-//        tooltipClass: 'highlight',
-//        content: function () {
-//            return $(this).prev('.warning-toast').html();
-//        },
-//        position: {
-//            my: "right bottom",
-//            at: "right top-10"
-//        }
-//    });
-//
-//    $('#info-binder-element').tooltip({
-//        items: '.info',
-//        tooltipClass: 'info-tooltip',
-//        content: function () {
-//            return $(this).closest('.doo-hicky').next('.info-toast').html();
-//        },
-//        position: {
-//            my: "left bottom",
-//            at: "left+10 top-10"
-//        }
-//    });  
-//});
+$(document).on('mousemove', function(e){
+    $('#tab-open').css({
+       left:  e.pageX,
+       top:   e.pageY
+    });
+});
+
+$('.open-link').hover(function() {
+   $(this).toggleClass('active');
+    $('.tab-open').toggleClass('open');
+  });
+
+
+
+
+
 
 
 
@@ -168,10 +170,19 @@ window.onload = function () {
             $('#play-pause').removeClass("icon-pause");
             $('#your_div_id').removeClass("icon-pause");
 
+    var offset = -20; 
+    $('html, body').animate({
+        scrollTop: $("video").offset().top + offset
+    }, 300);
+
+   
+            
         } else {
             video.pause();
             $('#play-pause').addClass("icon-pause");
             $('#your_div_id').addClass("icon-pause");
+
+
 
         }
     });

@@ -1451,8 +1451,10 @@ body .ui-tooltip {
     -webkit-box-shadow: 0 1px 1px rgba(100,100,100,.25);
     box-shadow: 0 1px 1px rgba(100,100,100,.25);
     background: rgba(0,0,0,1);   
+/*
     -webkit-transition: 0.05s ease;   
     transition: 0.05s ease;   
+*/
 /*    border: 11px solid #fff; */
 
 }
