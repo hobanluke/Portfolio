@@ -1,275 +1,231 @@
 //smooth scrolling - anchor click
 
-$('a[href*="#"]:not([href="#"])').click(function() {
-  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    if (target.length) {
-      $('html, body').animate({
-        scrollTop: target.offset().top
-      }, 1000);
-      return false;
-    }
-  }
+//$('a[href*="#"]:not([href="#"])').click(function() {
+//  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+//    var target = $(this.hash);
+//      var offset = -20; //Offset of 20px
+//    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+//    if (target.length) {
+//      $('html, body').animate({
+//        scrollTop: target.offset().top + offset
+//      }, 300);
+//      return false;
+//    }
+//  }
+//});
+
+$("#video-container").click(function() {
+    var offset = -20; 
+
+    $('html, body').animate({
+        scrollTop: $("#video-container").offset().top + offset
+    }, 300);
+  return false;
 });
 
+	
 
-//-----Actives menu  | START -----//
-
-//Click menu  
 
 $('#toggle-menu').click(function() {
    $(this).toggleClass('active');
-    $('#overlay-main').toggleClass('open');
-    $('.fixed-white-header').toggleClass('open');
-    $('.menu-text div').toggleClass('open');
-    $('.menu-text div .under-line').toggleClass('open');
-    $('.menu-header').toggleClass('open');
-    $('.main').toggleClass('open');
-    $('.smooth div').toggleClass('open');
-    $('.hover-bar-top').toggleClass('open');
+    $('.popup-section').toggleClass('open');
+    $('html').toggleClass('open');
+  });
+$('.popup-section').click(function() {
+   $(this).toggleClass('active');
+    $('.popup-section').removeClass('open');
+    $('.button_container').removeClass('active');
+    $('html').removeClass('open');
   });
 
-$(function() {
-    $('#overlay').click(function() {
-        $('main')
-            .css('overflow', 'hidden');
-    });
-	$('body, .close').click(function() {
-        $('body')
-            .css('overflow', 'visible');
+
+
+
+//$(".tooltip-showreel").tooltip({
+//            show: { effect: "false"},
+//            hide: { effect: "false"},  
+// classes: {
+//    "ui-tooltip": "highlight"
+//  }
+//    ,
+//
+//       
+//
+//        position: { my: "left+25 top", at: "right center" },
+//        content: "<h2>Play</h2>", 
+//    
+//    
+//            position: { my: "center", at: "center" },
+//            content: '<img src="/assets/play.svg" />',        
+//        });
+
+
+$(".tooltip").tooltip({
+    content: "<h2>Open</h2>",
+            show: { effect: "false"},
+            hide: { effect: "false"},
+            position: { my: "left+25 top", at: "right center" },
+});
+
+
+$(".popup-background").tooltip({
+    content: "<h2>Close</h2>",
+            show: { effect: "false"},
+            hide: { effect: "false"},
+            position: { my: "left+25 top", at: "right center" },
+});
+
+$(document).on('mousemove', function(e){
+    $('#your_div_id').css({
+       left:  e.pageX,
+       top:   e.pageY
     });
 });
 
-//hover menu
-    
-    $('.hover-bar-top').on('click hover', function () {
-        $('.hover-bar').toggleClass('open');
-        $('.fixed-white-header').toggleClass('open');
-        $('.main').toggleClass('open');
-        $('.scrollgress').toggleClass('open');
-        $('.hover-bar-top').toggleClass('open');
-      });
+$('#video-container').hover(function() {
+   $(this).toggleClass('active');
+    $('#your_div_id').toggleClass('open');
+  });
 
-    $('.hover-bar').on('click hover', function () {
-        $('.hover-bar').toggleClass('');
-        $('.fixed-white-header').toggleClass('');
-        $('.main').toggleClass('');
-        $('.scrollgress').toggleClass('');
-        $('.hover-bar-top').toggleClass('');
-      });
 
-    $(function() {
-            $('.main').scrollgress();
+
+
+
+//$(function() {
+//    $('#video').tooltip({
+//        items: '.tooltip-showreel',
+//        tooltipClass: 'highlight',
+//        content: function () {
+//            return $(this).prev('.warning-toast').html();
+//        },
+//        position: {
+//            my: "right bottom",
+//            at: "right top-10"
+//        }
+//    });
+//
+//    $('#info-binder-element').tooltip({
+//        items: '.info',
+//        tooltipClass: 'info-tooltip',
+//        content: function () {
+//            return $(this).closest('.doo-hicky').next('.info-toast').html();
+//        },
+//        position: {
+//            my: "left bottom",
+//            at: "left+10 top-10"
+//        }
+//    });  
+//});
+
+
+
+
+
+  $(function () { // wait for document ready
+		// init controller
+		var controller = new ScrollMagic.Controller();
+
+		// show pin state
+		function updateBox (e) {
+			if (e.type == "enter") {
+                $(".button_container").toggleClass('open');
+                video.pause();
+                
+			} else {$(".button_container").toggleClass('open');
+			}
+		}
+
+		// build scenes
+		new ScrollMagic.Scene({triggerElement: "#menu-trigger", duration: scroll})
+			.setPin("#pin")
+			.setClassToggle("#pin", "green")
+			.on("enter leave", updateBox)
+			.addIndicators() // add indicators (requires plugin)
+			.addTo(controller);
+
+	});
+
+
+//-----Video  | START -----//
+
+
+
+
+$(document).keyup(function(e) {
+  if (e.keyCode === 32) 
+      video.pause();
+});
+
+
+window.onload = function () {
+
+    var video = document.getElementById("video");
+    var playButton = document.getElementById("play-pause");
+
+    video.addEventListener("click", function () {
+        if (video.paused == true) {
+            video.play();
+            $('#play-pause').removeClass("icon-pause");
+            $('#your_div_id').removeClass("icon-pause");
+
+        } else {
+            video.pause();
+            $('#play-pause').addClass("icon-pause");
+            $('#your_div_id').addClass("icon-pause");
+
+        }
+    });
+
+    // Event listener for the play/pause button
+    playButton.addEventListener("click", function () {
+        if (video.paused == true) {
+            video.play();
+            $('#play-pause').removeClass("icon-pause");
+        } else {
+            video.pause();
+            $('#play-pause').addClass("icon-pause");
+        }
+    });
+
+    // Update the seek bar as the video plays
+    video.addEventListener("timeupdate", function () {
+        var value = (100 / video.duration) * video.currentTime;
     });
 
 
+    // Progress bars
 
+    var progress = document.getElementById('progress');
+    var progressBar = document.getElementById('progress-bar');
 
-  $(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
+    // If the browser doesn't support the progress element, set its state for some different styling
+    var supportsProgress = (document.createElement('progress').max !== undefined);
+    if (!supportsProgress) progress.setAttribute('data-state', 'fake');
 
-		// show pin state
-		function updateBox (e) {
-            if (e.type == "enter") {
-				$(".hover-link1").css('opacity','1');
-                $('.image').toggleClass('open');
-                $('.hover-link1').mouseenter(function(){
-                    $('.hover-link1').css('opacity','.25');
-                });
-                $('.hover-link1').mouseleave(function(){
-                    $('.hover-link1').css('opacity','1');
-                });        
-			} else {
-				$(".hover-link1").css('opacity','.25');
-                $('.image').toggleClass('open');
-                $('.hover-link1').mouseenter(function(){
-                    $('.hover-link1').css('opacity','1');
-                });
-                $('.hover-link1').mouseleave(function(){
-                    $('.hover-link1').css('opacity','.25');
-                }); 
-			}
-		}
-		new ScrollMagic.Scene({triggerElement: "#one", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	});
+    // As the video is playing, update the progress bar
+    video.addEventListener('timeupdate', function () {
+        // For mobile browsers, ensure that the progress element's max attribute is set
+        if (!progress.getAttribute('max')) progress.setAttribute('max', video.duration);
+        progress.value = video.currentTime;
+        progressBar.style.width = Math.floor((video.currentTime / video.duration) * 100) + '%';
+    });
 
-  $(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
+    // React to the user clicking within the progress bar
+    progress.addEventListener('click', function (e) {
 
-		// show pin state
-		function updateBox (e) {
-			if (e.type == "enter") {
-				$(".hover-link2").css('opacity','1');
-                $('.image-2').toggleClass('open');
-                $('.hover-link2').mouseenter(function(){
-                    $('.hover-link2').css('opacity','.25');
-                });
-                $('.hover-link2').mouseleave(function(){
-                    $('.hover-link2').css('opacity','1');
-                });
-                
-			} else {
-				$(".hover-link2").css('opacity','.25');
-                $('.image-2').toggleClass('open');
-                $('.hover-link2').mouseenter(function(){
-                    $('.hover-link2').css('opacity','1');
-                });
-                $('.hover-link2').mouseleave(function(){
-                    $('.hover-link2').css('opacity','.25');
-                }); 
-			}
-		}
-		new ScrollMagic.Scene({triggerElement: "#two", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	});
+        //var pos = (e.pageX  - this.offsetLeft) / this.offsetWidth; // Also need to take the parent into account here as .controls now has position:relative
+        var pos = (e.pageX - (this.offsetLeft + document.getElementById('video-container').offsetLeft)) / this.offsetWidth;
+        video.currentTime = pos * video.duration;
+    });
 
-  $(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
 
-		// show pin state
-		function updateBox (e) {
-            if (e.type == "enter") {
-				$(".hover-link3").css('opacity','1');
-                $('.image-3').toggleClass('open');
-                $('.hover-link3').mouseenter(function(){
-                    $('.hover-link3').css('opacity','.25');
-                });
-                $('.hover-link3').mouseleave(function(){
-                    $('.hover-link3').css('opacity','1');
-                });        
-			} else {
-				$(".hover-link3").css('opacity','.25');
-                $('.image-3').toggleClass('open');
-                $('.hover-link3').mouseenter(function(){
-                    $('.hover-link3').css('opacity','1');
-                });
-                $('.hover-link3').mouseleave(function(){
-                    $('.hover-link3').css('opacity','.25');
-                }); 
-			}
-		}
-		new ScrollMagic.Scene({triggerElement: "#three", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	});
+}
 
-  $(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
 
-		// show pin state
-		function updateBox (e) {
-            if (e.type == "enter") {
-				$(".hover-link4").css('opacity','1');
-                $('.image-4').toggleClass('open');
-                $('.hover-link4').mouseenter(function(){
-                    $('.hover-link4').css('opacity','.25');
-                });
-                $('.hover-link4').mouseleave(function(){
-                    $('.hover-link4').css('opacity','1');
-                });        
-			} else {
-				$(".hover-link4").css('opacity','.25');
-                $('.image-4').toggleClass('open');
-                $('.hover-link4').mouseenter(function(){
-                    $('.hover-link4').css('opacity','1');
-                });
-                $('.hover-link4').mouseleave(function(){
-                    $('.hover-link4').css('opacity','.25');
-                }); 
-			}
-		}
-		new ScrollMagic.Scene({triggerElement: "#four", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	});
 
-  $(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
 
-		// show pin state
-		function updateBox (e) {
-            if (e.type == "enter") {
-				$(".hover-link5").css('opacity','1');
-                $('.image-5').toggleClass('open');
-                $('.hover-link5').mouseenter(function(){
-                    $('.hover-link5').css('opacity','.25');
-                });
-                $('.hover-link5').mouseleave(function(){
-                    $('.hover-link5').css('opacity','1');
-                });        
-			} else {
-				$(".hover-link5").css('opacity','.25');
-                $('.image-5').toggleClass('open');
-                $('.hover-link5').mouseenter(function(){
-                    $('.hover-link5').css('opacity','1');
-                });
-                $('.hover-link5').mouseleave(function(){
-                    $('.hover-link5').css('opacity','.25');
-                }); 
-			}
-		}
-		new ScrollMagic.Scene({triggerElement: "#five", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	});
 
-    $(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
 
-		// show pin state
-		function updateBox (e) {
-            if (e.type == "enter") {
-				$(".hover-link6").css('opacity','1');
-                $('.image-6').toggleClass('open');
-                $('.hover-link6').mouseenter(function(){
-                    $('.hover-link6').css('opacity','.25');
-                });
-                $('.hover-link6').mouseleave(function(){
-                    $('.hover-link6').css('opacity','1');
-                });        
-			} else {
-				$(".hover-link6").css('opacity','.25');
-                $('.image-6').toggleClass('open');
-                $('.hover-link6').mouseenter(function(){
-                    $('.hover-link6').css('opacity','1');
-                });
-                $('.hover-link6').mouseleave(function(){
-                    $('.hover-link6').css('opacity','.25');
-                }); 
-			}
-		}
-		new ScrollMagic.Scene({triggerElement: "#six", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	});
 
 
 
@@ -279,488 +235,6 @@ $(function() {
 
 
 
-  $(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
-
-		// show pin state
-		function updateBox (e) {
-			if (e.type == "enter") {
-				$(".hover-link21").css('opacity','1');
-                $('.hover-link21').mouseenter(function(){
-                    $('.hover-link21').css('opacity','.25');
-                });
-                $('.hover-link21').mouseleave(function(){
-                    $('.hover-link21').css('opacity','1');
-                });        
-			} else {
-				$(".hover-link21").css('opacity','.25');
-                $('.hover-link21').mouseenter(function(){
-                    $('.hover-link21').css('opacity','1');
-                });
-                $('.hover-link21').mouseleave(function(){
-                    $('.hover-link21').css('opacity','.25');
-                }); 
-			}
-		}
-		new ScrollMagic.Scene({triggerElement: "#two", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	});
-
-  $(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
-
-		// show pin state
-		function updateBox (e) {
-            if (e.type == "enter") {
-				$(".hover-link31").css('opacity','1');
-                $('.hover-link31').mouseenter(function(){
-                    $('.hover-link31').css('opacity','.25');
-                });
-                $('.hover-link31').mouseleave(function(){
-                    $('.hover-link31').css('opacity','1');
-                });        
-			} else {
-				$(".hover-link31").css('opacity','.25');
-                $('.hover-link31').mouseenter(function(){
-                    $('.hover-link31').css('opacity','1');
-                });
-                $('.hover-link31').mouseleave(function(){
-                    $('.hover-link31').css('opacity','.25');
-                }); 
-			}
-		}
-		new ScrollMagic.Scene({triggerElement: "#three", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	});
-
-  $(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
-
-		// show pin state
-		function updateBox (e) {
-            if (e.type == "enter") {
-				$(".hover-link41").css('opacity','1');
-                $('.hover-link41').mouseenter(function(){
-                    $('.hover-link41').css('opacity','.25');
-                });
-                $('.hover-link41').mouseleave(function(){
-                    $('.hover-link41').css('opacity','1');
-                });        
-			} else {
-				$(".hover-link41").css('opacity','.25');
-                $('.hover-link41').mouseenter(function(){
-                    $('.hover-link41').css('opacity','1');
-                });
-                $('.hover-link41').mouseleave(function(){
-                    $('.hover-link41').css('opacity','.25');
-                }); 
-			}
-		}
-		new ScrollMagic.Scene({triggerElement: "#four", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	});
-
-  $(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
-
-		// show pin state
-		function updateBox (e) {
-            if (e.type == "enter") {
-				$(".hover-link51").css('opacity','1');
-                $('.hover-link51').mouseenter(function(){
-                    $('.hover-link51').css('opacity','.25');
-                });
-                $('.hover-link51').mouseleave(function(){
-                    $('.hover-link51').css('opacity','1');
-                });        
-			} else {
-				$(".hover-link51").css('opacity','.25');
-                $('.hover-link51').mouseenter(function(){
-                    $('.hover-link51').css('opacity','1');
-                });
-                $('.hover-link51').mouseleave(function(){
-                    $('.hover-link51').css('opacity','.25');
-                }); 
-			}
-		}
-		new ScrollMagic.Scene({triggerElement: "#five", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	});
-
-    $(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
-
-		// show pin state
-		function updateBox (e) {
-            if (e.type == "enter") {
-				$(".hover-link61").css('opacity','1');
-                $('.hover-link61').mouseenter(function(){
-                    $('.hover-link61').css('opacity','.25');
-                });
-                $('.hover-link61').mouseleave(function(){
-                    $('.hover-link61').css('opacity','1');
-                });        
-			} else {
-				$(".hover-link61").css('opacity','.25');
-                $('.hover-link61').mouseenter(function(){
-                    $('.hover-link61').css('opacity','1');
-                });
-                $('.hover-link61').mouseleave(function(){
-                    $('.hover-link61').css('opacity','.25');
-                }); 
-			}
-		}
-		new ScrollMagic.Scene({triggerElement: "#six", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	});
-
-$(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
-
-		// show pin state
-		function updateBox (e) {
-			if (e.type == "enter") {
-                $('.image-book2').toggleClass('open');
-			} else {
-                $('.image-book2').toggleClass('open'); 
-			}
-		}
-		new ScrollMagic.Scene({triggerElement: "#book-image", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	});
-
-
-//-----Actives menu  | END -----//
-
-//-----Information Page | START -----//
-
-//hover over images
-    
-    
-    $('.landing-image').hover(function(){
-        $('.image-credit-header').css('color', '#000');
-        $('.image-credit').css('color', '#000');
-    },function(){
-        $('.image-credit-header').css('z-index','1').css('color', '#999');
-        $('.image-credit').css('z-index','1').css('color', '#999');
-    })
-    $('.image').hover(function(){
-        $('.image-credit-header').css('color', '#000');
-        $('.image-credit').css('color', '#000');
-    },function(){
-        $('.image-credit-header').css('z-index','1').css('color', '#999');
-        $('.image-credit').css('z-index','1').css('color', '#999');
-    })
-    $('.image-small').hover(function(){
-        $('.image-credit-header').css('color', '#000');
-        $('.image-credit').css('color', '#000');
-    },function(){
-        $('.image-credit-header').css('color', '#999');
-        $('.image-credit').css('color', '#999');
-    })
-    $('.image-small2').hover(function(){
-        $('.image-credit-header').css('color', '#000');
-        $('.image-credit').css('color', '#000');
-    },function(){
-        $('.image-credit-header').css('color', '#999');
-        $('.image-credit').css('color', '#999');
-    })
-    $('.image').hover(function(){
-        $('.image-timeline-credit-header').css('color', '#000');
-        $('.image-timeline-credit').css('color', '#000');
-    },function(){
-        $('.image-timeline-credit-header').css('color', '#999');
-        $('.image-timeline-credit').css('color', '#999');
-    })
-        $('.image-small3').hover(function(){
-        $('.image-timeline-credit-header').css('color', '#000');
-        $('.image-timeline-credit').css('color', '#000');
-    },function(){
-        $('.image-timeline-credit-header').css('color', '#999');
-        $('.image-timeline-credit').css('color', '#999');
-    })
-    
-//scrolling effect 
-    
-  $(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
-
-		// show pin state
-		function updateBox (e) {
-			if (e.type == "enter") {
-				$(".hover-bar-top").css('opacity','1');
-                $('.fixed-white-header').css('opacity','0.95');
-			} else {
-				$(".hover-bar-top").css('opacity','0');
-                $('.fixed-white-header').css('opacity','0');
-			}
-		}
-
-		// build scenes
-		new ScrollMagic.Scene({triggerElement: "#trigger-nav", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-
-	});
-
-$(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
-
-		// show pin state
-		function updateBox (e) {
-            if (e.type == "enter") {
-				$(".landing-image-book").toggleClass('open');   
-                $(".landing-image-book2").toggleClass('open');   
-			} else {
-				$(".landing-image-book").toggleClass('open');   
-                $(".landing-image-book2").toggleClass('open');      
-			}
-		}
-		new ScrollMagic.Scene({triggerElement: "#book", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	});
-
-//-----Information Page | END -----//
-         
- //-----Acknowledgements Page | START -----//
-
-//hover over the names
-
-    $('#Adams').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Adams-image').toggleClass('open');
-     });
-
-    $('#Kitchin').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Kitchin-image').toggleClass('open');
-     });
-
-    $('#Mackie').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Mackie-image').toggleClass('open');
-     });
-
-    $('#Mudge').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Mudge-image').toggleClass('open');
-     });
-
-    $('#Marden').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Marden-image').toggleClass('open');
-     });
-
-    $('#Cruse').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Cruse-image').toggleClass('open');
-     });
-
-    $('#Dunbar').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Dunbar-image').toggleClass('open');
-     });
-
-    $('#Monk').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Monk-image').toggleClass('open');
-     });
-
-    $('#Hoggart').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Hoggart-image').toggleClass('open');
-     });
-
-    $('#Nieper').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Nieper-image').toggleClass('open');
-     });
-
-    $('#Holling').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Holling-image').toggleClass('open');
-     });
-
-    $('#Drew').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Drew-image').toggleClass('open');
-     });
-
-    $('#Campbell').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Campbell-image').toggleClass('open');
-     });
-
-    $('#Herk').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Herk-image').toggleClass('open');
-     });
-
-    $('#Jonker').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Jonker-image').toggleClass('open');
-     });
-
-    $('#Dixon').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Dixon-image').toggleClass('open');     
-     });
-
-    $('#Joynson').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Joynson-image').toggleClass('open');
-     });
-
-    $('#Keane').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Keane-image').toggleClass('open');
-     });
-
-    $('#Duggan').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Duggan-image').toggleClass('open');
-     });
-
-    $('#Neill').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Neill-image').toggleClass('open');
-     });
-
-    $('#Osborne').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Osborne-image').toggleClass('open');
-     });
-
-    $('#Hale').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Hale-image').toggleClass('open');
-     });
-
-    $('#Palmer').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Palmer-image').toggleClass('open');
-     });
-
-    $('#Rodger').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Rodger-image').toggleClass('open');
-     });
-
-    $('#Rockhouse').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Rockhouse-image').toggleClass('open');
-     });
-
-    $('#Sims').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Sims-image').toggleClass('open');
-     });
-
-    $('#Ufer').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Ufer-image').toggleClass('open');
-     });
-
-    $('#Valli').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Valli-image').toggleClass('open');
-     });
-
-    $('#Hurren').hover(function(){
-        $('.footer-background').toggleClass('open');
-         $('.Hurren-image').toggleClass('open');
-     });
-
-
-
-    //Alternating names
-    
-     var quotes = $(".alternating-introtext");
-    var quoteIndex = -1;
-    
-    function showNextQuote() {
-        ++quoteIndex;
-        quotes.eq(quoteIndex % quotes.length)
-            .fadeIn(300)
-            .delay(700)
-            .fadeOut(300, showNextQuote);
-    }
-    
-    showNextQuote();
-    
-    
- //-----Acknowledgements Page | END -----//
-
- //-----Footer | START -----//
-
-
-  $(function () { // wait for document ready
-		// init controller
-		var controller = new ScrollMagic.Controller();
-
-		// show pin state
-		function updateBox (e) {
-			if (e.type == "enter") {
-                $(".bottom-footer-header").toggleClass('open');
-                $(".bottom-footer-content").toggleClass('open');
-                $(".bottom-footer-credit").toggleClass('open');
-			} else {
-                $(".bottom-footer-header").toggleClass('open');
-                $(".bottom-footer-content").toggleClass('open');
-                $(".bottom-footer-credit").toggleClass('open');
-			}
-		}
-
-		// build scenes
-		new ScrollMagic.Scene({triggerElement: "#footer", duration: scroll})
-			.setPin("#pin")
-			.setClassToggle("#pin", "green")
-			.on("enter leave", updateBox)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-
-	});
-
- //-----Footer | END -----//
 
  //-----Remove Hover for moblie | START -----//
 

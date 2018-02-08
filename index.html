@@ -28,18 +28,59 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="styles/fonts.min.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/main.min.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/media_queries.css"/>   
-     
+    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/media_queries.css"/>  
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css"> 
+  
     <!-- JS -->
-    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
-    
-    </head><div class="scrollbar" id="style-1">
-  <div class="force-overflow"></div>
-</div>
-    <body>      
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>        
+    <script type="text/javascript" src="js/jquery-ui.js"></script>        
+    </head>
+    <body>  
+        <header>
+        <div class="button_container" id="toggle-menu">
+            <span class="top"></span>
+                <span class="bottom"></span>
+        </div>  
+        <div class="popup-section">     
+    <div class="headering-logo-popup"><h1>
+     Contact</h1>
+    </div>     
+        <div class="headering-logo2"><h2>
+        Graphic Design<br>
+        Front-end Development
+        </h2></div>     
+    <div class="headering-logo6"><h2>
+    Phone: (+64) 272477490<br> Email: 
+    <a class="anchor" href="mailto:hello@lukehoban.co.nz?Subject=Hello">hello@lukehoban.co.nz</a><br><br>
+    <a class="anchor" target="_blank" href="https://www.instagram.com/lukehoban.co.nz/">Instagram</a><br>
+    <a class="anchor" target="_blank" href="https://twitter.com/hobanluke">Twitter</a><br>
+    <a class="anchor" target="_blank" href="https://www.behance.net/Lukehoban">Behance</a><br>    
+    </h2></div>    
+        <div class="headering-logo8"><h2>  
+Selected <span>W</span>ork: 
+        <br><br>
+        <a class="anchor" href="#video-container" id="showreel-link">Showreel</a><br>
+        <a class="anchor" href="#pike">The Pike River disaster</a><br>
+        <a class="anchor" href="#fearful-harmony">Fearful Harmony</a><br>
+        <a class="anchor" href="#exposure">Exposure Exhibition</a><br> 
+        <a class="anchor" href="#matisse">Henri Matisse: The Cut-outs</a><br>
+        <a class="anchor" href="#nuclear">Nuclear tests</a><br>   
+        <a class="anchor" href="#visual">Visual Diary & Brief</a> <br><br>
+        <a class="anchor" href="#resume" id="resume-link">Résumé</a>    
+        </h2></div>             
+<div class="headering-logo7">
+<h2>
+    <span>W</span>ellington, New Zealand<br>
+    </h2>
+
+</div>  
+        <div class="popup-background" title=""></div> 
+     </div> 
+            
+    </header>        
 <main class="main"><div class="wrapper">
-<div class="menu-section">
+<div class="menu-section" id="top">
     <div class="headering-logo"><h1>
     Selected <br><span>W</span>ork:</h1>
     </div>      
@@ -48,55 +89,140 @@
         Front-end Development
         </h2></div>     
     <div class="headering-logo3"><h2>
-    Wellington, New Zealand<br>
+    <span>W</span>ellington, New Zealand<br>
     (+64) 272477490<br>
     Available for freelance work<br>
     <a class="anchor" href="mailto:hello@lukehoban.co.nz?Subject=Hello">hello@lukehoban.co.nz</a>
     </h2></div>   
         <div class="headering-logo4"><h2>               
         2015—2018<br>   
-        <span>Massey University</span>
+        Massey University
         <br>Bachelor of Design with Honours <br>Visual Communication 
-        <br><br>2014—2015 <br><span>University of Auckland<br></span>
+        <br><br>2014—2015 <br>University of Auckland<br>
         Elam School of Fine Arts<br>Bachelor of Fine Arts <br>         
         </h2></div>   
     <div class="headering-logo5"><h2>
     <a class="anchor" target="_blank" href="https://www.instagram.com/lukehoban.co.nz/">Instagram</a><br>
     <a class="anchor" target="_blank" href="https://twitter.com/hobanluke">Twitter</a><br>
     <a class="anchor" target="_blank" href="https://www.behance.net/Lukehoban">Behance</a><br>
-    </h2></div>    
-<div class="filter">
-    <h2>
-    Projects: 
-        <br><br>
-        <a class="anchor" href="#pike">The Pike River disaster</a><br>
-        <a class="anchor" href="#exposure">Exposure Exhibition</a><br> 
-        <a class="anchor" href="#matisse">Henri Matisse: The Cut-outs</a><br>
-        <a class="anchor" href="#nuclear">Nuclear tests</a><br>   
-        <a class="anchor" href="#visual">Visual Diary & Brief</a><br>
-        <a class="anchor" href="#weta">Weta Workshop</a><br>  
-        <a class="anchor" href="#fashion">The Dark Side of Fashion</a><br>    
-    </h2>
-</div>  
-<div class="showreel">
+    </h2></div>     
+    <div class="showreel">
     <h2>  
-        Showreel:
-    </h2>
-</div>      
-     </div>
-
+        Showreel
+    </h2> 
+</div>
+     </div><div id="your_div_id" class="your_div_id icon-pause icon-play"></div>
 <div class="work-content">
-          
-  <article id="fearful-harmony" class="videoWrapper col-10">
-    <iframe src="https://player.vimeo.com/video/251085762" width="640" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  </article>     
-
- <!--Fearful Harmony-->           
+    <div id="video-container"><a href="#video-container">
+        <video class="tooltip-showreel"  id="video" poster="assets/images/showreel/poster.jpg" preload="auto" >
+          <source src="https://d1je6qw79vww5h.cloudfront.net/showreel.mp4" type="video/mp4">
+          <source src="https://d1je6qw79vww5h.cloudfront.net/showreel.webm" type="video/webm">
+          <source src="https://d1je6qw79vww5h.cloudfront.net/showreel.ogv" type="video/ogv">
+              <p>Sorry your browser doesn't support HTML5 video.</p>
+      </video></a>
+        <!-- Video Controls -->
+        <div id="video-controls" class="controls">
+            <div class="controls-bg"></div>
+            <div class="progress">
+              <progress id="progress" value="0" min="0">
+                 <span id="progress-bar"></span>
+              </progress>
+            </div>
+        </div>  
+            <button class="play-pause icon-pause icon-play" id="play-pause" type="button" data-state="play"></button> 
+        <div class="video-description">
+        </div> 
+    </div>    
     
+    <div class="project-credit">
+  <h2>Showreel</h2>
+  <h3>A collection of work from 2017 to present<br>All Rights Reserved to their respective owners.
+         Information can be found <a class="anchor-h3"  href="https://vimeo.com/251085762" target="_blank">here</a></h3>      
+</div> 
+<!--
+  <article id="fearful-harmony" class="videoWrapper col-10">
+    <iframe src="https://player.vimeo.com/video/251085762" width="640" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>  
+  </article>   
+-->
+<!--Pike River-->   
+          
+  <article id="pike" class="videoWrapper col-12">
+    <iframe src="https://player.vimeo.com/video/213672268" width="640" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </article>
+<div id="menu-trigger"></div>             
   <article class="col-9">
+    <a class="open-link" target="_blank" href="http://pikeriver.co.nz/information">
+      <figure>
+        <img class="tooltip" title="Open in new tab"  src="assets/images/pike/pike12.jpg" alt="Information about the Pike River mining disaster. West Coast, New Zealand">
+      </figure>    
+    </a>
+  </article>   
+  <article class="col-9">
+    <a class="open-link" target="_blank" href="http://pikeriver.co.nz/timeline">
+      <figure>
+        <img class="tooltip" title="Open in new tab" src="assets/images/pike/pike8.jpg" alt="Timeline of events from the Pike River mining disaster. West Coast, New Zealand">
+      </figure>    
+    </a>
+  </article>            
+  <article class="col-6">
     <a>
       <figure>
-        <img class="bw" src="assets/images/fearful-harmony/fearful10.jpg" alt="Spread from the supporting publication of Fearful Harmony. Cover and back pages">
+        <img class="bw" src="assets/images/pike/pike13.jpg" alt="Information about the Pike River mining disaster. West Coast, New Zealand">
+      </figure>    
+    </a>
+  </article>             
+  <article class="col-6">
+    <a>
+      <figure>
+        <img class="bw" src="assets/images/pike/pike7.jpg" alt="Supporting publication. Pike River mining disaster">
+      </figure>    
+    </a>
+  </article>      
+  <article class="videoWrapper col-10">
+    <iframe src="https://player.vimeo.com/video/213672674" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </article>    
+  <article class="col-6">
+    <a>
+      <figure>
+        <img class="bw" src="assets/images/pike/pike1.jpg" alt="Supporting publication. Pike River mining disaster">
+      </figure>    
+    </a>
+  </article> 
+  <article class="col-6">
+    <a>
+      <figure>
+        <img class="bw" src="assets/images/pike/pike11.jpg" alt="Supporting publication. Pike River mining disaster">
+      </figure>    
+    </a>
+  </article>                 
+  <article class="videoWrapper col-6">
+    <iframe src="https://player.vimeo.com/video/213667285?autoplay=1&loop=1&autopause=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </article>  
+  <article class="col-6">
+    <a>
+      <figure>
+        <img class="bw" src="assets/images/pike/pike2.jpg" alt="Information about the Pike River mining disaster. West Coast, New Zealand">
+      </figure>    
+    </a>
+  </article> 
+  <article class="col-9">
+    <a class="open-link" target="_blank" href="http://pikeriver.co.nz/timeline">
+      <figure>
+        <img class="tooltip" title="Open in new tab"  src="assets/images/pike/pike4.jpg" alt="Timeline of events from the Pike River mining disaster. West Coast, New Zealand">
+      </figure>    
+    </a>
+  </article>           
+<div class="project-credit">
+  <h2>The Pike River disaster</h2>
+  <h3>Live preview: <a class="anchor-h3"  href="http://pikeriver.co.nz/" target="_blank">pikeriver.co.nz</a><br>Printed matte<span>r</span>, Interactive</h3>        
+</div>          
+ 
+ <!--Fearful Harmony-->           
+    
+  <article class="col-9" id="fearful-harmony">
+    <a>
+      <figure>
+        <img src="assets/images/fearful-harmony/fearful10.jpg" alt="Spread from the supporting publication of Fearful Harmony. Cover and back pages">
       </figure>    
     </a>
   </article>
@@ -196,80 +322,8 @@
   </article>     
 <div class="project-credit">
   <h2>Fearful Harmony</h2>
-  <h3>A collaborative project with <a class="anchor"  href="http://alfredhoi.com/" target="_blank">Alfred Hoi</a>. <br>Moving image, Printed matter, Interactive</h3>      
-</div>              
-          
-<!--Pike River-->   
-          
-  <article id="pike" class="videoWrapper col-12">
-    <iframe src="https://player.vimeo.com/video/213672268" width="640" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  </article>            
-  <article class="col-9">
-    <a class="open-link" target="_blank" href="http://pikeriver.co.nz/information">
-      <figure>
-        <img class="bw" src="assets/images/pike/pike12.jpg" alt="Information about the Pike River mining disaster. West Coast, New Zealand">
-      </figure>    
-    </a>
-  </article>  
-  <article class="col-9">
-    <a class="open-link" target="_blank" href="http://pikeriver.co.nz/timeline">
-      <figure>
-        <img class="bw" src="assets/images/pike/pike8.jpg" alt="Timeline of events from the Pike River mining disaster. West Coast, New Zealand">
-      </figure>    
-    </a>
-  </article>            
-  <article class="col-6">
-    <a>
-      <figure>
-        <img class="bw" src="assets/images/pike/pike13.jpg" alt="Information about the Pike River mining disaster. West Coast, New Zealand">
-      </figure>    
-    </a>
-  </article>             
-  <article class="col-6">
-    <a>
-      <figure>
-        <img class="bw" src="assets/images/pike/pike7.jpg" alt="Supporting publication. Pike River mining disaster">
-      </figure>    
-    </a>
-  </article>      
-  <article class="videoWrapper col-10">
-    <iframe src="https://player.vimeo.com/video/213672674" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  </article>    
-  <article class="col-6">
-    <a>
-      <figure>
-        <img class="bw" src="assets/images/pike/pike1.jpg" alt="Supporting publication. Pike River mining disaster">
-      </figure>    
-    </a>
-  </article> 
-  <article class="col-6">
-    <a>
-      <figure>
-        <img class="bw" src="assets/images/pike/pike11.jpg" alt="Supporting publication. Pike River mining disaster">
-      </figure>    
-    </a>
-  </article>                 
-  <article class="videoWrapper col-6">
-    <iframe src="https://player.vimeo.com/video/213667285?autoplay=1&loop=1&autopause=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  </article>  
-  <article class="col-6">
-    <a>
-      <figure>
-        <img class="bw" src="assets/images/pike/pike2.jpg" alt="Information about the Pike River mining disaster. West Coast, New Zealand">
-      </figure>    
-    </a>
-  </article> 
-  <article class="col-9">
-    <a class="open-link" target="_blank" href="http://pikeriver.co.nz/timeline">
-      <figure>
-        <img class="bw" src="assets/images/pike/pike4.jpg" alt="Timeline of events from the Pike River mining disaster. West Coast, New Zealand">
-      </figure>    
-    </a>
-  </article>           
-<div class="project-credit">
-  <h2>The Pike River disaster</h2>
-  <h3>Live preview: <a class="anchor"  href="http://pikeriver.co.nz/" target="_blank">pikeriver.co.nz</a><br>Printed matter, Interactive</h3>        
-</div>                            
+  <h3>A collaborative project with <a class="anchor"  href="http://alfredhoi.com/" target="_blank">Alfred Hoi</a>. <br>Moving image, Printed matte<span>r</span>, Interactive</h3>      
+</div>                                         
           
 <!--Exposure-->
           
@@ -279,28 +333,28 @@
   <article class="col-9">
     <a class="open-link" target="_blank" href="http://exposure2017.massey.ac.nz/about/">
       <figure>
-        <img class="bw" src="assets/images/exposure/exposure4.jpg" alt="About page for the Massey University’s Exposure Exhibition, showcasing the emerging talents of the 2017 graduates">
+        <img class="tooltip" title="Open in new tab"  src="assets/images/exposure/exposure4.jpg" alt="About page for the Massey University’s Exposure Exhibition, showcasing the emerging talents of the 2017 graduates">
       </figure>    
     </a>
   </article>
   <article class="col-6">
     <a class="open-link" target="_blank" href="http://exposure2017.massey.ac.nz/students/fashion/taania-wesselius/">
       <figure>
-        <img class="bw" src="assets/images/exposure/exposure5.jpg" alt="Profile page for the Massey University’s Exposure Exhibition, showcasing the emerging talents of the 2017 graduates ">
+        <img class="tooltip" title="Open in new tab"  src="assets/images/exposure/exposure5.jpg" alt="Profile page for the Massey University’s Exposure Exhibition, showcasing the emerging talents of the 2017 graduates ">
       </figure>    
     </a>
   </article>           
   <article class="col-6">
     <a class="open-link" target="_blank" href="http://exposure2017.massey.ac.nz/students/fashion/taania-wesselius/">
       <figure>
-        <img class="bw" src="assets/images/exposure/exposure6.jpg" alt="Profile page for the Massey University’s Exposure Exhibition, showcasing the emerging talents of the 2017 graduates ">
+        <img class="tooltip" title="Open in new tab"  src="assets/images/exposure/exposure6.jpg" alt="Profile page for the Massey University’s Exposure Exhibition, showcasing the emerging talents of the 2017 graduates ">
       </figure>    
     </a>
   </article>         
   <article class="col-9">
     <a class="open-link" target="_blank" href="http://exposure2017.massey.ac.nz/">
       <figure>
-        <img class="bw" src="assets/images/exposure/exposure3.jpg" alt="Homepage for the Massey University’s Exposure Exhibition, showcasing the emerging talents of the 2017 graduates ">
+        <img class="tooltip" title="Open in new tab"  src="assets/images/exposure/exposure3.jpg" alt="Homepage for the Massey University’s Exposure Exhibition, showcasing the emerging talents of the 2017 graduates ">
       </figure>    
     </a>
   </article>          
@@ -314,7 +368,7 @@
   <article class="col-9">
     <a class="open-link" target="_blank" href="http://exposure2017.massey.ac.nz/about/">
       <figure>
-        <img class="bw" src="assets/images/exposure/exposure9.jpg" alt="About page for the Massey University’s Exposure Exhibition, showcasing the emerging talents of the 2017 graduates">
+        <img class="tooltip" title="Open in new tab"  src="assets/images/exposure/exposure9.jpg" alt="About page for the Massey University’s Exposure Exhibition, showcasing the emerging talents of the 2017 graduates">
       </figure>    
     </a>
   </article>           
@@ -345,7 +399,7 @@
   <article class="col-6">
     <a class="open-link" target="_blank" href="http://exposure2017.massey.ac.nz/wayfinding/">
       <figure>
-        <img class="bw" src="assets/images/exposure/exposure11.jpg" alt="Wayfinding page for the Massey University’s Exposure Exhibition, showcasing the emerging talents of the 2017 graduates">
+        <img class="tooltip" title="Open in new tab"  src="assets/images/exposure/exposure11.jpg" alt="Wayfinding page for the Massey University’s Exposure Exhibition, showcasing the emerging talents of the 2017 graduates">
       </figure>    
     </a>
   </article>    
@@ -358,7 +412,7 @@
   </article>          
 <div class="project-credit">
   <h2>Exposure Exhibition</h2>
-  <h3>Live preview: <a class="anchor"  href="http://exposure2017.massey.ac.nz/" target="_blank">exposure17.com</a><br>Printed matter, Interactive</h3>        
+  <h3>Live preview: <a class="anchor-h3"  href="http://exposure2017.massey.ac.nz/" target="_blank">exposure17.com</a><br>Printed matte<span>r</span>, Interactive</h3>        
 </div>         
           
 <!--Matisse-->
@@ -415,10 +469,24 @@
   <article class="col-6">
     <a>
      <figure>
-        <img class="bw" src="assets/images/matisse/matisse9.jpg" alt="Contents page with folded supporting posters, Henri Matisse: The Cut-Outs">
+        <img class="bw" src="assets/images/matisse/10.jpg" alt="Contents page with folded supporting posters, Henri Matisse: The Cut-Outs">
       </figure>
     </a>
-  </article>       
+  </article>          
+  <article class="col-6">
+    <a>
+     <figure>
+        <img class="bw" src="assets/images/matisse/5.jpg" alt="Contents page with folded supporting posters, Henri Matisse: The Cut-Outs">
+      </figure>
+    </a>
+  </article>          
+  <article class="col-6">
+    <a>
+     <figure>
+        <img class="bw" src="assets/images/matisse/13.jpg" alt="Contents page with folded supporting posters, Henri Matisse: The Cut-Outs">
+      </figure>
+    </a>
+  </article>          
   <article class="col-6">
     <a>
      <figure>
@@ -442,111 +510,14 @@
   </article>  
 <div class="project-credit">
   <h2>Henri Matisse: The Cut-outs</h2>
-  <h3>A retrospective of Matisse's Cut-out period<br>Printed matter</h3>      
+    <h3>A retrospective of Matisse's Cut-out period<br>Printed matter</h3>
 </div> 
-       
-<!--Nuclear-->
-
-  <article id="nuclear" class="col-12">
-    <a class="open-link" target="_blank" href="http://nucleartests.org/">
-     <figure>
-        <img class="bw" src="assets/images/nuclear/nuclear11.jpg" alt="Homepage, American nuclear testing between 1945 & 1962">
-      </figure>
-    </a>
-  </article>     
-  <article class="col-12">
-    <a>
-     <figure>
-        <img class="bw" src="assets/images/nuclear/nuclear12.jpg" alt="Homepage, American nuclear testing between 1945 & 1962">
-      </figure>
-    </a>
-  </article>    
-  <article class="col-6">
-    <a>
-     <figure>
-        <img class="bw" src="assets/images/nuclear/nuclear2.jpg" alt="Supporting publication, American nuclear testing between 1945 & 1962">
-      </figure>
-    </a>
-  </article>          
-  <article class="col-6">
-    <a>
-     <figure>
-        <img class="bw" src="assets/images/nuclear/nuclear3.jpg" alt="Supporting publication, American nuclear testing between 1945 & 1962">
-      </figure>
-    </a>
-  </article>           
-  <article class="col-6">
-    <a>
-     <figure>
-        <img class="bw" src="assets/images/nuclear/nuclear4.jpg" alt="Supporting publication and poster, American nuclear testing between 1945 & 1962">
-      </figure>
-    </a>
-  </article>         
-  <article class="col-6">
-    <a>
-     <figure>
-        <img class="bw" src="assets/images/nuclear/nuclear9.jpg" alt="Supporting publication, American nuclear testing between 1945 & 1962">
-      </figure>
-    </a>
-  </article>           
-  <article class="col-6">
-    <a class="open-link" target="_blank" href="http://nucleartests.org/">
-     <figure>
-        <img class="bw" src="assets/images/nuclear/nuclear5.jpg" alt="Footer of homepage, American nuclear testing between 1945 & 1962">
-      </figure>
-    </a>
-  </article>         
-  <article class="col-12">
-    <a>
-     <figure>
-        <img class="bw" src="assets/images/nuclear/nuclear7.jpg" alt="Operation Hardtack page, American nuclear testing between 1945 & 1962">
-      </figure>
-    </a>
-  </article>  
-  <article class="col-6">
-    <a class="open-link" target="_blank" href="http://nucleartests.org/">
-     <figure>
-        <img class="bw" src="assets/images/nuclear/nuclear14.jpg" alt="Homepage, American nuclear testing between 1945 & 1962">
-      </figure>
-    </a>
-  </article> 
-  <article class="col-3">
-    <a class="open-link" target="_blank" href="http://nucleartests.org/">
-     <figure>
-        <img class="bw" src="assets/images/nuclear/nuclear13.jpg" alt="Homepage, American nuclear testing between 1945 & 1962">
-      </figure>
-    </a>
-  </article>  
-  <article class="col-12">
-    <a>
-     <figure>
-        <img class="bw" src="assets/images/nuclear/nuclear1.jpg" alt="Supporting poster, American nuclear testing between 1945 & 1962">
-      </figure>
-    </a>
-  </article>  
-<!--
-  <article class="videoWrapper col-9">
-    <iframe src="https://player.vimeo.com/video/223604617" width="640" height="337"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  </article>           
--->
-  <article class="col-12">
-    <a>
-     <figure>
-        <img class="bw" src="assets/images/nuclear/nuclear10.jpg" alt="Operation Teapot page, American nuclear testing between 1945 & 1962">
-      </figure>
-    </a>
-  </article>          
-<div class="project-credit">
-  <h2>Nuclear tests</h2>
-  <h3>Live preview: <a class="anchor"  href="http://nucleartests.org/" target="_blank">nucleartests.org</a><br>Printed matter, Interactive</h3>      
-</div>          
-          
 <!--Visual Blog-->
       
   <article id="visual" class="col-6">
     <a class="open-link" target="_blank" href="http://visualdiary.co.nz/">
      <figure>
-        <img class="bw" src="assets/images/visual_blog/blog1.jpg" alt="Homepage, Visual Diary">
+        <img class="tooltip" title="Open in new tab"  src="assets/images/visual_blog/blog1.jpg" alt="Homepage, Visual Diary">
       </figure>
     </a>
   </article>         
@@ -597,11 +568,115 @@
   </article>   
 <div class="project-credit">
   <h2>Visual Diary & Brief</h2>
-  <h3>Live preview: <a class="anchor"  href="http://visualdiary.co.nz/" target="_blank">visualdiary.co.nz</a><br>Printed matter, Interactive</h3>      
-</div>     
+  <h3>Live preview: <a class="ancho-h3r"  href="http://visualdiary.co.nz/" target="_blank">visualdiary.co.nz</a><br>Printed matte<span>r</span>, Interactive</h3>      
+</div>      
+<!--Nuclear-->
+
+  <article id="nuclear" class="col-12">
+    <a class="open-link" target="_blank" href="http://nucleartests.org/">
+     <figure>
+        <img class="tooltip" title="Open in new tab"  src="assets/images/nuclear/nuclear11.jpg" alt="Homepage, American nuclear testing between 1945 & 1962">
+      </figure>
+    </a>
+  </article>    
+  <article class="col-12">
+    <a>
+     <figure>
+        <img class="bw" src="assets/images/nuclear/nuclear12.jpg" alt="Homepage, American nuclear testing between 1945 & 1962">
+      </figure>
+    </a>
+  </article>   
+  <article class="col-6">
+    <a>
+     <figure>
+        <img class="bw" src="assets/images/nuclear/nuclear2.jpg" alt="Supporting publication, American nuclear testing between 1945 & 1962">
+      </figure>
+    </a>
+  </article>          
+  <article class="col-6">
+    <a>
+     <figure>
+        <img class="bw" src="assets/images/nuclear/nuclear3.jpg" alt="Supporting publication, American nuclear testing between 1945 & 1962">
+      </figure>
+    </a>
+  </article>           
+  <article class="col-6">
+    <a>
+     <figure>
+        <img class="bw" src="assets/images/nuclear/nuclear4.jpg" alt="Supporting publication and poster, American nuclear testing between 1945 & 1962">
+      </figure>
+    </a>
+  </article>         
+  <article class="col-6">
+    <a>
+     <figure>
+        <img class="bw" src="assets/images/nuclear/nuclear9.jpg" alt="Supporting publication, American nuclear testing between 1945 & 1962">
+      </figure>
+    </a>
+  </article>           
+  <article class="col-6">
+    <a class="open-link" target="_blank" href="http://nucleartests.org/">
+     <figure>
+        <img class="tooltip" title="Open in new tab"  src="assets/images/nuclear/nuclear5.jpg" alt="Footer of homepage, American nuclear testing between 1945 & 1962">
+      </figure>
+    </a>
+  </article>         
+  <article class="col-12">
+    <a>
+     <figure>
+        <img class="bw" src="assets/images/nuclear/nuclear7.jpg" alt="Operation Hardtack page, American nuclear testing between 1945 & 1962">
+      </figure>
+    </a>
+  </article>  
+  <article class="col-6">
+    <a class="open-link" target="_blank" href="http://nucleartests.org/">
+     <figure>
+        <img class="tooltip" title="Open in new tab"  src="assets/images/nuclear/nuclear14.jpg" alt="Homepage, American nuclear testing between 1945 & 1962">
+      </figure>
+    </a>
+  </article> 
+  <article class="col-3">
+    <a class="open-link" target="_blank" href="http://nucleartests.org/">
+     <figure>
+        <img class="tooltip" title="Open in new tab"  src="assets/images/nuclear/nuclear13.jpg" alt="Homepage, American nuclear testing between 1945 & 1962">
+      </figure>
+    </a>
+  </article> 
+  <article class="col-12">
+    <a>
+     <figure>
+        <img class="bw" src="assets/images/nuclear/nuclear1.jpg" alt="Supporting poster, American nuclear testing between 1945 & 1962">
+      </figure>
+    </a>
+  </article>     
+  <article class="col-12">
+    <a>
+     <figure>
+        <img class="bw" src="assets/images/nuclear/nuclear10.jpg" alt="Operation Teapot page, American nuclear testing between 1945 & 1962">
+      </figure>
+    </a>
+  </article> 
+<!--
+  <article class="videoWrapper col-9">
+    <iframe src="https://player.vimeo.com/video/223604617" width="640" height="337"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </article>           
+-->         
+<div class="project-credit">
+  <h2>Nuclear tests</h2>
+  <h3>Live preview: <a class="anchor-h3"  href="http://nucleartests.org/" target="_blank">nucleartests.org</a><br>Printed matte<span>r</span>, Interactive</h3>      
+</div>
+<!--
+<div class="project-credit2">
+  <h2>Infomation</h2>   
+    <h2>I wanted to bring in some of the elements that Henri Matisse was exploring technically and conceptually when he was making his cut-outs. At the end of his life he turn almost exclusively to cut-out paper as his primary medium. This became the main theme throughout this project, where the publication became a retrospective of this period of his life.</h2>
+</div>    
+-->
+          
+   
     
 <!--Weta-->
     
+<!--
   <article class="col-6" id="weta">
     <a class="open-link" target="_blank" href="http://wetaworkshopschool.massey.ac.nz/">
      <figure>
@@ -627,9 +702,11 @@
   <h2>Weta Workshop/Massey University</h2>
   <h3>Live preview: <a class="anchor"  href="http://wetaworkshopschool.massey.ac.nz/" target="_blank">wetaworkshopschool.massey.ac.nz</a><br>Interactive</h3>      
 </div>   
+-->
     
 <!--The Dark Side of Fashion-->
           
+<!--
   <article id="fashion" class="col-6">
     <a>
      <figure>
@@ -664,17 +741,100 @@
 <div class="project-credit">
   <h2>The Dark Side of Fashion</h2>
   <h3>A collaborative project with <a class="anchor"  href="http://kylewhyte.co.nz" target="_blank">Kyle Whyte</a><br>Moving image, Printed matter</h3>      
-</div>           
-<div class="footer"><h3>
-    © Luke Hoban. All Rights Reserved</h3>
-    <h3>
-    Further information and full resolution images can be requested via <a class="anchor" href="mailto:hello@lukehoban.co.nz?Subject=Hello">email</a>
-    </h3>
-</div> 
+</div>   
+-->
+    
+    
+<div class="footer-section" id="resume">
+    <div class="footer-logo"><h1>
+    Résumé</h1>
+    </div>    
+    <div class="footer-logo2">
+        <h2>
+        Luke Hoban
+        </h2>
+    </div>     
+    <div class="footer-logo3"><h2>
+        <div class="title">STUDIO Address<br></div>
+        <indent>7/178 Wakefield St<br>
+        Te Aro, Wellington<br>
+        New Zealand, 6011</indent>    
+        <br>
+        <br>
+        <div class="title">AWARDS & RECOGNITION<br></div>
+DINZ Best Awards<br>
+        <indent>2 × Gold<br>
+        1 × Silver <br>
+        1 × Bronze </indent><br>
+        Site Inspire—<a  class="anchor" target="_blank" href="https://www.siteinspire.com/directory/3686-luke-hoban">Featured</a><br> 
+        Bēhance Galleries<br>
+        <indent>3 × Main gallery<br>
+        1 × Motion <br> 
+        2 × Graphic Design <br> 
+        1 × Interaction<br>   
+        </indent><br>
+        Sites We Like—<a  class="anchor" target="_blank" href="http://www.designmadeingermany.de/sites-we-like/">Featured</a>
+        <br>
+        Hover States—<a  class="anchor" target="_blank" href="https://hoverstat.es/features/exposure-2017">Featured</a><br>
+        
+            
+    </h2>
+    </div>   
+    <div class="footer-logo4"><h2>
+    <div class="title">WORK EXPERIENCE<br></div>
+    Design Contractor<br>
+        <indent>Ministry of Primary Industries<br>
+        May 2017—July 2017 <br>(3 months)</indent><br>
+    Junior Designer<br>
+        <indent><a class="anchor" target="_blank"  href="http://www.openlab.ac.nz/">OpenLab</a><br>
+        September 2016—February 2017 <br>(6 months)</indent><br>  
+    Graphic Design Intern<br>
+        <indent>The Playground NZ Ltd<br>
+        November 2015—February 2016 <br>(4 months)</indent> 
+        <br>
+        <br>
+        <div class="title">TRAINNING & EDUCATION<br></div>
+    Massey University<br>
+        <indent>Bachelor of Design with Honours<br>
+        2015—2018</indent><br>
+    University of Auckland<br>
+        <indent>Bachelor of Fine Arts<br>
+        2014—2015</indent><br> 
+        <br>
+        <indent><div class="title">TECHNICAL</div>
+        InDesign<br>
+        Photoshop<br>
+        Illustrator<br>
+        After Efects<br>
+        Cinema 4D<br>
+        HTML & CSS<br>
+        JavaScript  
+        </indent>            
+    </h2>
+    </div>
+    <div class="footer-logo5">
+        <h2>
+        <div class="title">currently</div>    
+        Available for freelance work<br>
+        <a class="anchor" href="mailto:hello@lukehoban.co.nz?Subject=Hello">hello@lukehoban.co.nz</a> <br><br>
+        <div class="title">Information</div>        
+        Luke Hoban is a graphic designer and front–end developer based in New Zealand. Often working on self initiated and commissioned projects within many fields.   
+        </h2>
+    </div>     
+    <div class="footer-logo6"><h1><a class="anchor" href="#top">☗</a></h1></div>
+    <div class="footer"><h3>
+        © Luke Hoban. All Rights Reserved</h3>
+        <h3>
+        Further information and full resolution images can be requested via <a class="anchor-h3" href="mailto:hello@lukehoban.co.nz?Subject=Hello">email</a>
+        </h3>
+    </div> 
+            </div> 
         </div>  
     </div>
 </main>     
-    <script type="text/javascript" src="js/index.js"></script>   
+    <script type="text/javascript" src="js/index.js"></script>  
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
