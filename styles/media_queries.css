@@ -766,6 +766,9 @@ h1 {
 } 
 .headering-logo{
 }
+.showreel{
+    margin-top: 1050px;
+}    
     
 .work-content{
     margin-top: 1150px;
@@ -794,7 +797,10 @@ h1 {
 .headering-logo{
     margin-top: 360px;
 }
-    
+.showreel{
+    margin-top: 1170px;
+}    
+        
 .headering-logo6{
     margin-top: 710px;
 }

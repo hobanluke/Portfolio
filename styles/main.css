@@ -31,6 +31,15 @@ html.open{
     overflow-x: hidden;
 }
 
+/*
+body{
+    cursor: default;
+}
+body.load{
+    cursor: wait;
+}
+*/
+
 article, aside, details, figcaption, figure, footer, header, hgroup,
 menu, nav, section {
     display: block
@@ -447,7 +456,6 @@ p:first-of-type {
     display: none;
     opacity: 0;
     height: 100vh;
-    width: 100%;
     overflow: hidden;
 }
 
@@ -458,10 +466,12 @@ p:first-of-type {
 
 .popup-background{
     height: 100vh;
+    width: 100vw;
     background: rgba(0,0,0,.95);
     z-index: 0;
-    cursor: pointer;
+    cursor: ne-resize;
 }
+
 .headering-logo-popup{
     z-index: 12;
     float: left;

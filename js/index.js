@@ -233,9 +233,6 @@ window.onload = function () {
 
 
 
-
-
-
  //-----Remove Hover for moblie | START -----//
 
 
@@ -263,3 +260,11 @@ if (touch) { // remove all :hover stylesheets
     });
 
  //-----Remove Hover for moblie | END -----//
+
+ //-----Cursor loader -----//
+
+//$("body").addClass("load");
+//
+//window.onload = function () {
+//$("body").removeClass("load");
+//}
