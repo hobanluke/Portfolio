@@ -327,7 +327,7 @@ p:first-of-type {
 }
 .headering-logo3{
     float: left;
-    width: 250px;
+    width: 170px;
     margin-top: 10px;
     margin-bottom: 100px;
     margin-left: 290px;
@@ -345,7 +345,7 @@ p:first-of-type {
 }
 .headering-logo5{
     float: left;
-    width: 250px;
+/*    width: 170px;*/
     margin-top: 10px;
     margin-bottom: 100px;
     margin-left: 920px;
@@ -940,7 +940,6 @@ progress[value]::-webkit-progress-bar {
 
 .icon-play:before {
     content: url(../assets/pause.svg);
-    opacity: .15
 }
 
 .icon-pause:before,
@@ -953,7 +952,6 @@ progress[value]::-webkit-progress-bar {
 
 .icon-pause:before {
     content: url(../assets/play.svg);
-    opacity: 1
 }
 
 

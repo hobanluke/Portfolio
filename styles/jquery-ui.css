@@ -1426,6 +1426,14 @@ body .ui-tooltip {
 }
 */
 
+/*
+.tooltip-showreel{
+    cursor: none;
+    background: rgba(0,0,0,0); !important
+     max-width: 200px; !important
+}
+*/
+
 .ui-widget-shadow{
     display: none;
 }
