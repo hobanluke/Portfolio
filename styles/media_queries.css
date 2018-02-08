@@ -16,7 +16,10 @@ h1 {
 .play-pause {
     display: block;
 }
-      
+.your_div_id.open {
+    opacity: 0;
+    visibility: none;
+}     
 .filter{
     opacity: 0;   
     margin-top: 675px;
@@ -156,7 +159,10 @@ h1 {
 .play-pause {
     display: block;
 }
-    
+.your_div_id.open {
+    opacity: 0;
+    visibility: none;
+}    
 
 .headering-logo2{
     margin-left: 10px;
@@ -259,7 +265,10 @@ h1 {
 .play-pause {
     display: block;
 }
-    
+.your_div_id.open {
+    opacity: 0;
+    visibility: none;
+}   
     
 .filter{
     opacity: 0;   
@@ -385,7 +394,10 @@ h1 {
 .play-pause {
     display: block;
 }
-    
+.your_div_id.open {
+    opacity: 0;
+    visibility: none;
+}  
 .filter{
     margin-left: 290px;
 }   
@@ -477,7 +489,10 @@ h1 {
 .play-pause {
     display: block;
 }
-  
+.your_div_id.open {
+    opacity: 0;
+    visibility: none;
+}
     
 .filter{
     margin-left: 290px;
@@ -578,6 +593,11 @@ h1 {
     width: 200px;
 }
   
+.your_div_id.open {
+    opacity: 0;
+    visibility: none;
+}
+    
 .work-content{
     margin-top: 1150px;
     
