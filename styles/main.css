@@ -26,10 +26,12 @@ body, html {
     font-family: "Neue Haas Grotesk Text Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+/*
 html.open{
     overflow-y: hidden;
     overflow-x: hidden;
 }
+*/
 
 /*
 body{
