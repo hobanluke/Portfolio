@@ -263,8 +263,8 @@ if (touch) { // remove all :hover stylesheets
 
  //-----Cursor loader -----//
 
-$("body").addClass("load");
-
-window.onload = function () {
-$("body").removeClass("load");
-}
+//$("body").addClass("load");
+//
+//window.onload = function () {
+//$("body").removeClass("load");
+//}

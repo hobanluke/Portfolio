@@ -31,12 +31,14 @@ html.open{
     overflow-x: hidden;
 }
 
+/*
 body{
     cursor: default;
 }
 body.load{
     cursor: wait;
 }
+*/
 
 article, aside, details, figcaption, figure, footer, header, hgroup,
 menu, nav, section {
