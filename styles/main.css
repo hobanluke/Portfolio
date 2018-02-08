@@ -815,6 +815,7 @@ iframe.bw:hover {
     z-index: 8888;
     margin-left: 20px;
 /*    margin-top: 75px;*/
+    display: block;
 }
 
 @media (min-width:0px) {
@@ -973,4 +974,11 @@ progress[value]::-webkit-progress-bar {
 .your_div_id.open {
     opacity: 1;
     visibility: visible;
+}
+
+#moblie{
+    display: none;
+}
+#moblie-hide{
+    display: visible;
 }
