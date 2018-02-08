@@ -939,7 +939,8 @@ progress[value]::-webkit-progress-bar {
 }
 
 .icon-play:before {
-    content: url(../assets/pause.svg)
+    content: url(../assets/pause.svg);
+    opacity: .15
 }
 
 .icon-pause:before,
@@ -951,7 +952,8 @@ progress[value]::-webkit-progress-bar {
 }
 
 .icon-pause:before {
-    content: url(../assets/play.svg)
+    content: url(../assets/play.svg);
+    opacity: 1
 }
 
 
