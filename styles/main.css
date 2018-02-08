@@ -482,7 +482,10 @@ p:first-of-type {
     margin-left: 10px;
     margin-top: 340px;
     position: fixed;
-/*    pointer-events: none;*/
+/*
+    pointer-events: none;
+    cursor: none;
+*/
 }
 
 .headering-logo-popup span{

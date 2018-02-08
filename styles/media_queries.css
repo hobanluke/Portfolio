@@ -31,7 +31,20 @@ display: none;
 body .ui-tooltip {
 display: none;
 
-} 
+}
+    
+.tab-open.open{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}    
+   
+.close.open{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}
+    
 .showreel{
     margin-top: -175px;
     margin-left: 220px;
@@ -157,6 +170,17 @@ body .ui-tooltip {
 display: none;
 
 } 
+.tab-open.open{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}    
+   
+.close.open{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}    
 .work-content{
     margin-top: 720px;
     
@@ -300,7 +324,17 @@ h1 {
     display: none;
 }
 */
-    
+.tab-open.open{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}    
+   
+.close.open{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}    
 .ui-tooltip {
 display: none;
 }
@@ -425,7 +459,17 @@ h1 {
 .headering-logo{
     margin-top: 520px;
 }
-    
+.tab-open.open{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}    
+   
+.close.open{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}  
 .play-pause {
     display: block;
 }
@@ -548,7 +592,17 @@ display: none;
 .showreel{
     margin-left: 290px;
 }   
-
+.tab-open.open{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}    
+   
+.close.open{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}
 .headering-logo2{
     float: left;
     width: 250px;
@@ -631,7 +685,17 @@ h1 {
 .headering-logo{
     margin-top: 700px;
 }
-    
+.tab-open.open{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}    
+   
+.close.open{
+    opacity: 0;
+    visibility: none;
+    display: none;
+} 
 .play-pause {
     display: block;
 }
