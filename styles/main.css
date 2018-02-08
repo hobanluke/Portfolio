@@ -456,8 +456,10 @@ p:first-of-type {
     display: none;
     opacity: 0;
     height: 100vh;
+    left: 0;
+    right: 0;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .popup-section.open{
