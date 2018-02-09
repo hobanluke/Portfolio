@@ -117,13 +117,6 @@ $('.open-link').hover(function() {
 
 
 
-   $(".play-pause").click(function () {
-        video.play();
-    });
-
-
-
-
 
   $(function () { // wait for document ready
 		// init controller
