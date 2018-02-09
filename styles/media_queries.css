@@ -44,6 +44,19 @@ display: none;
     visibility: none;
     display: none;
 }
+  
+#video-container {
+    display: none;
+}   
+    
+#moblie{
+    margin-top: -30px;
+    display: block;
+}    
+
+#moblie-hide{
+    display: none;
+}       
     
 .showreel{
     margin-top: -175px;
@@ -193,11 +206,25 @@ display: none;
 .showreel{
     margin-top: 650px;
     margin-left:180px;
-    display: none;
+/*    display: none;*/
 }  
 .play-pause {
     display: block;
 }
+   
+#video-container {
+    display: none;
+}   
+    
+#moblie{
+    margin-top: -30px;
+    display: block;
+}    
+
+#moblie-hide{
+    display: none;
+}     
+    
 .your_div_id.open {
     opacity: 0;
     visibility: none;
@@ -304,13 +331,14 @@ h1 {
 .play-pause {
     display: block;
 }
+    
 .your_div_id.open {
     opacity: 0;
     visibility: none;
     display: none;
 } 
-/*
 #moblie{
+    margin-top: -30px;
     display: block;
 }    
 
@@ -323,7 +351,6 @@ h1 {
 #video-container {
     display: none;
 }
-*/
 .tab-open.open{
     opacity: 0;
     visibility: none;
@@ -353,7 +380,7 @@ display: none;
 .showreel{
     margin-top: 720px;
     margin-left: 200px;
-    display: none;
+/*    display: none;*/
 }      
     
 .headering-logo2{
@@ -487,6 +514,19 @@ body .ui-tooltip {
 display: none;
 
 }  
+  
+#video-container {
+    display: none;
+}   
+    
+#moblie{
+    margin-top: -30px;
+    display: block;
+}    
+
+#moblie-hide{
+    display: none;
+}       
 .showreel{
     margin-top: 850px;
     margin-left: 290px;
@@ -585,6 +625,19 @@ body .ui-tooltip {
 display: none;
 
 }   
+  
+#video-container {
+    display: none;
+}   
+    
+#moblie{
+    margin-top: -30px;
+    display: block;
+}    
+
+#moblie-hide{
+    display: none;
+}       
 .filter{
     margin-left: 290px;
 }   
@@ -691,6 +744,19 @@ h1 {
     display: none;
 }    
    
+  
+#video-container {
+    display: none;
+}   
+    
+#moblie{
+    margin-top: -30px;
+    display: block;
+}    
+
+#moblie-hide{
+    display: none;
+}       
 .close.open{
     opacity: 0;
     visibility: none;
