@@ -955,7 +955,7 @@ progress[value]::-webkit-progress-bar {
     transform: translate(-50%, -50%);
     z-index: 3;
     background: rgba(0,0,0,0);
-/*    display: none;*/
+    display: none;
 }
 
 .icon-play:before {

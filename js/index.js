@@ -117,7 +117,9 @@ $('.open-link').hover(function() {
 
 
 
-
+   $(".play-pause").click(function () {
+        video.play();
+    });
 
 
 
