@@ -471,7 +471,7 @@ p:first-of-type {
 .popup-background{
     height: 100vh;
     width: 100vw;
-    background: rgba(0,0,0,.95);
+    background: rgba(0,0,0,.93);
     z-index: 0;
     cursor: pointer;
 }
@@ -921,30 +921,30 @@ video {
     border: none;
     overflow: hidden;
     border-radius: 1px;
-/*    color: #fff;*/
+/*    background: #fff;*/
 }
 
 .controls progress[data-state="fake"] {
-    background: rgba(0,0,0,1);
+    background: rgba(255,255,255,1);
 }
 
 .controls progress span {
     width: 0%;
     height: 100%;
     display: inline-block;
-    background-color: #fff;
+    background-color: #666;
 }
 
 .controls progress::-moz-progress-bar {
-    background-color: #fff;
+    background-color: #666;
 }
 
 .controls progress::-webkit-progress-value {
-    background-color: #fff;
+    background-color: #666;
 }
 
 progress[value]::-webkit-progress-bar {
-    background: rgba(0,0,0,1);
+    background: rgba(255,255,255,1);
 }
  
 .play-pause {
