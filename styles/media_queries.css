@@ -346,8 +346,9 @@ h1 {
     display: none;
 }    
 #showreel-link{
-    display: none;
+/*    display: none;*/
 }    
+    
 #video-container {
     display: none;
 }
