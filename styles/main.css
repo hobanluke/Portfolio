@@ -473,7 +473,7 @@ p:first-of-type {
     width: 100vw;
     background: rgba(0,0,0,.95);
     z-index: 0;
-    cursor: none;
+    cursor: pointer;
 }
 
 .headering-logo-popup{
