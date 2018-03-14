@@ -205,7 +205,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Neue Haas Grotesk Text Pro', "Helvetica", "Arial", sans-serif;
+    font-family:  "Helvetica", 'Neue Haas Grotesk Text Pro', "Arial", sans-serif;
     font-weight: 600;
     letter-spacing: 0.002em;
     line-height: 1.1em;
@@ -229,7 +229,7 @@ h2 indent{
 }
 
 h3 {
-    font-family: "Neue Haas Grotesk Text Pro", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica", "Neue Haas Grotesk Text Pro",  "Arial", sans-serif;
     font-weight: 600;
     letter-spacing: 0.002em;
     line-height: 1.1em;
