@@ -685,13 +685,25 @@ display: none;
     width: 260px;
 }  
 .project-credit{
-    padding-bottom: 0px;
+    position: relative;
+    margin-left: 10px;
+    width: 180px;
+    padding-bottom: 150px;
+    padding-top: 10px;
+    clear: both;
+}    
+
+    
+.project-credit{
+    padding-bottom: 50px;
+    margin-top: 20px;
 }
 .project-readmore{
-    margin-left: 20px;
-    margin-top: 13px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 200px;
     padding-bottom: 50px;
-    padding-top: 0px;
+    padding-top: 10px;
 }
 .showreel-credit{
     margin-top: -60px;
@@ -823,11 +835,11 @@ display: none;
     width: 260px;
 } 
 .project-credit{
-    padding-bottom: 0px;
+    padding-bottom: 50px;
 }
 .project-readmore{
     margin-left: 20px;
-    margin-top: 13px;
+    margin-top: 56px;
     padding-bottom: 50px;
     padding-top: 0px;
 }
@@ -961,7 +973,7 @@ display: none;
 }
 .project-readmore{
     margin-left: 20px;
-    margin-top: 13px;
+    margin-top: 20px;
     padding-bottom: 50px;
     padding-top: 0px;
 }

@@ -301,7 +301,7 @@ p:first-of-type {
 .anchor:hover{
 /*   color: #ac2c0d;*/
 /*   color: red;*/
-    opacity: .25;
+    opacity: .45;
 }
 
 .anchor-h3{
@@ -722,7 +722,7 @@ iframe.bw:hover {
     position: relative;
     margin-left: 20px;
     margin-top: 50px;
-    width: 500px;
+    width: 260px;
     padding-bottom: 150px;
     padding-top: 6px;
     clear: both;
@@ -739,7 +739,7 @@ iframe.bw:hover {
     border-width: 1px 0 0px;
 */
     position: relative;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 50px;
     width: 320px;
     padding-bottom: 100px;
