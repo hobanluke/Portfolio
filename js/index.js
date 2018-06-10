@@ -38,8 +38,36 @@ $('.popup-section').click(function() {
     $('html').removeClass('open');
   });
 
-
-
+$('#exposure-link').click(function() {
+   $(this).toggleClass('active');
+    $('.exposure-expand').toggleClass('open');
+    $('#exposure-link').toggleClass('open');
+  });
+$('#pike-link').click(function() {
+   $(this).toggleClass('active');
+    $('.pike-expand').toggleClass('open');
+    $('#pike-link').toggleClass('open');
+  });
+$('#fearful-link').click(function() {
+   $(this).toggleClass('active');
+    $('.fearful-expand').toggleClass('open');
+    $('#fearful-link').toggleClass('open');
+  });
+$('#matisse-link').click(function() {
+   $(this).toggleClass('active');
+    $('.matisse-expand').toggleClass('open');
+    $('#matisse-link').toggleClass('open');
+  });
+$('#visual-link').click(function() {
+   $(this).toggleClass('active');
+    $('.visual-expand').toggleClass('open');
+    $('#visual-link').toggleClass('open');
+  });
+$('#nuclear-link').click(function() {
+   $(this).toggleClass('active');
+    $('.nuclear-expand').toggleClass('open');
+    $('#nuclear-link').toggleClass('open');
+  });
 
 //$(".tooltip-showreel").tooltip({
 //            show: { effect: "false"},
