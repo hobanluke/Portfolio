@@ -774,7 +774,7 @@ iframe.bw:hover {
 .exposure-expand.open{
     opacity: 1;
     visibility: visible;
-    height: 200px;
+    height: 120px;
     -webkit-transition:  0.3s ease;
     transition:  0.3s ease;
     will-change: transform;
