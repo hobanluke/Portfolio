@@ -41,32 +41,44 @@ $('.popup-section').click(function() {
 $('#exposure-link').click(function() {
    $(this).toggleClass('active');
     $('.exposure-expand').toggleClass('open');
-    $('#exposure-link').toggleClass('open');
+    $('#exposure-link').toggleClass('open');    $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
   });
 $('#pike-link').click(function() {
    $(this).toggleClass('active');
     $('.pike-expand').toggleClass('open');
-    $('#pike-link').toggleClass('open');
+    $('#pike-link').toggleClass('open');    $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
   });
 $('#fearful-link').click(function() {
    $(this).toggleClass('active');
     $('.fearful-expand').toggleClass('open');
-    $('#fearful-link').toggleClass('open');
+    $('#fearful-link').toggleClass('open');    $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
   });
 $('#matisse-link').click(function() {
    $(this).toggleClass('active');
     $('.matisse-expand').toggleClass('open');
-    $('#matisse-link').toggleClass('open');
+    $('#matisse-link').toggleClass('open');    $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
   });
 $('#visual-link').click(function() {
    $(this).toggleClass('active');
     $('.visual-expand').toggleClass('open');
-    $('#visual-link').toggleClass('open');
+    $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
   });
 $('#nuclear-link').click(function() {
    $(this).toggleClass('active');
     $('.nuclear-expand').toggleClass('open');
-    $('#nuclear-link').toggleClass('open');
+    $('#nuclear-link').toggleClass('open');    $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
   });
 
 //$(".tooltip-showreel").tooltip({
