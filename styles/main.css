@@ -852,6 +852,25 @@ iframe.bw:hover {
     will-change: transform;
 }
 
+.maud-expand{
+    overflow: hidden;
+    visibility: hidden;
+    opacity:0;
+    height: 0;
+    -webkit-transition:  0.3s ease;
+    transition:  0.3s ease;
+    will-change: transform;
+}
+
+.maud-expand.open{
+    opacity: 1;
+    visibility: visible;
+    height: 200px;
+    -webkit-transition:  0.3s ease;
+    transition:  0.3s ease;
+    will-change: transform;
+}
+
 .nuclear-expand{
     overflow: hidden;
     visibility: hidden;

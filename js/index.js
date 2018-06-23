@@ -73,6 +73,13 @@ $('#visual-link').click(function() {
           return text === "+ More Info" ? "– Close Info" : "+ More Info";
       })
   });
+$('#maud-link').click(function() {
+   $(this).toggleClass('active');
+    $('.maud-expand').toggleClass('open');
+    $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
 $('#nuclear-link').click(function() {
    $(this).toggleClass('active');
     $('.nuclear-expand').toggleClass('open');
