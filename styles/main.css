@@ -852,7 +852,7 @@ iframe.bw:hover {
     will-change: transform;
 }
 
-.maud-expand{
+.maud-expand {
     overflow: hidden;
     visibility: hidden;
     opacity:0;
