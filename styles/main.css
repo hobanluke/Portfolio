@@ -1017,7 +1017,7 @@ iframe.bw:hover {
     margin-left: 20px;
 /*    margin-top: 75px;*/
     display: block;
-    background-color: #fff;
+    background-color: #ddd;
 }
 
 @media (min-width:0px) {
