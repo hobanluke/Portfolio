@@ -1197,7 +1197,7 @@ progress[value]::-webkit-progress-bar {
 }
 
 .icon-play:before {
-    content: url(../assets/pause.svg);
+    content: url(../assets/pause-new.svg);
 }
 
 .icon-pause:before,
@@ -1215,7 +1215,7 @@ progress[value]::-webkit-progress-bar {
 }
 
 .icon-pause:before {
-    content: url(../assets/play.svg);
+    content: url(../assets/play-new.svg);
 }
 
 
@@ -1301,7 +1301,7 @@ progress[value]::-webkit-progress-bar {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    background: rgba(5,5,5,.85);  
+    background: rgba(5,5,5,.95);  
     border: 1px solid rgba(25,25,25,.02);
 }
 
