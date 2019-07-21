@@ -1,1 +1,7 @@
 @font-face{font-family:'Neue Haas Grotesk Text Pro';src:url(/assets/NHaasGroteskTXPro-65Md.woff2);font-style:normal;font-weight:600}body,html{font-family:"Neue Haas Grotesk Text Pro","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+@font-face {
+    font-family: 'NeueUniversLTStd';
+    src: url('/assets/NeueUniversLTStd.woff2'); 
+    font-style: normal;
+    font-weight: 500;
+}

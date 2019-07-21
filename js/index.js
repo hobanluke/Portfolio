@@ -1,18 +1,3 @@
-//smooth scrolling - anchor click
-
-//$('a[href*="#"]:not([href="#"])').click(function() {
-//  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-//    var target = $(this.hash);
-//      var offset = -20; //Offset of 20px
-//    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-//    if (target.length) {
-//      $('html, body').animate({
-//        scrollTop: target.offset().top + offset
-//      }, 300);
-//      return false;
-//    }
-//  }
-//});
 
 $("#video-container").click(function() {
     var offset = -20; 
@@ -42,6 +27,13 @@ $('#exposure-link').click(function() {
    $(this).toggleClass('active');
     $('.exposure-expand').toggleClass('open');
     $('#exposure-link').toggleClass('open');    $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+$('#tcf-link').click(function() {
+   $(this).toggleClass('active');
+    $('.tcf-expand').toggleClass('open');
+    $('#tcf-link').toggleClass('open');    $(this).text(function(i, text){
           return text === "+ More Info" ? "– Close Info" : "+ More Info";
       })
   });

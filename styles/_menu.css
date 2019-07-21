@@ -1,0 +1,101 @@
+.section--menu  {
+    z-index: 10;
+    position: fixed;
+    height: 5rem;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #F9F9F9;
+}
+.menu-logo svg  {
+    height: 2rem;
+}
+.section--menu p a   {
+    transition: color 200ms ease; 
+}
+.section--menu p a:hover    {
+    color: #8A8E93;
+    transition: color 200ms ease; 
+}
+.menu-cart  {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-cart button {
+    padding: 0rem 0rem;
+    min-width: 3rem;
+    min-height: 3rem;
+}
+.menu-cart button h3   {
+    margin-top: 0rem;
+}
+.menu-cart button:hover {
+    background: #CCCCCC;
+}
+.section--mobile-button   {
+    z-index: 10;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: none;
+}
+.menu--button   {
+    cursor: pointer;
+    margin: 1rem;
+    height: 5rem;
+    padding: 0rem 2.5rem;
+    background: rgba(211, 213, 215, 0.75);
+    transition: background 200ms ease;
+    border-radius: 5rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px)
+}
+.menu--button:hover   {
+    background: rgba(204, 204, 204, 1);
+    transition: background 200ms ease;
+}
+.menu--button svg   {
+    width: 5rem;
+    height: 5rem;
+}
+@media screen and (min-width: 1920px) and (max-width: 10000px) {
+    .menu-cart button {
+    padding: 0rem 0rem;
+    }
+}
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+    .menu-cart button {
+    padding: 0rem 0rem;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+    .menu-cart button {
+    padding: 0rem 0rem;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 799px) {
+    .section--menu  {
+    height: 50px;
+    }
+    .menu-logo svg  {
+    margin-top: 4px;
+    height: 20px;
+    }
+    .menu-cart button {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    }
+    .menu-cart button h3   {
+    margin-top: 0rem;
+    }
+    .menu--desktop  {
+    display: none;
+    }
+    .section--mobile-button   {
+    display: block;
+    }
+}
