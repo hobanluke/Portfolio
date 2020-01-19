@@ -1019,9 +1019,6 @@ iframe.bw:hover {
 @media only screen and (max-width: 768px) {
 .col-3 {
     width: 50%; } 
-    
-.col-4 {
-    width: 50%; } 
 
 .col-7 {
   -ms-flex: 0 0 100%;
