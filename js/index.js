@@ -23,6 +23,13 @@ $('.popup-section').click(function() {
     $('html').removeClass('open');
   });
 
+$('#sdc-link').click(function() {
+   $(this).toggleClass('active');
+    $('.sdc-expand').toggleClass('open');
+    $('#sdc-link').toggleClass('open');    $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
 $('#exposure-link').click(function() {
    $(this).toggleClass('active');
     $('.exposure-expand').toggleClass('open');
@@ -165,9 +172,11 @@ $('.open-link').hover(function() {
 		function updateBox (e) {
 			if (e.type == "enter") {
                 $(".button_container").toggleClass('open');
+                $(".fixed-cta").toggleClass('open');
                 video.pause();
                 
 			} else {$(".button_container").toggleClass('open');
+             $(".fixed-cta").toggleClass('open');       
 			}
 		}
 

@@ -474,6 +474,35 @@ border-width: 0px 0 0px;
     right: 55px;
 }
 
+.fixed-cta {
+    position: fixed;
+    left: 20px;
+    top: 18px;
+    text-align: center; 
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+/*
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(15,15,15,1);
+    padding: 12px 20px 12px 20px;
+    border-radius: 5px;
+    opacity: .85;
+*/
+}
+
+.fixed-cta.open {
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    }
+
+
+
 .popup-section{
     display: none;
     opacity: 0;
@@ -482,6 +511,7 @@ border-width: 0px 0 0px;
     right: 0;
     width: 100vw;
     overflow-x: hidden;
+    z-index: 12;
 }
 
 .popup-footer{
@@ -498,8 +528,9 @@ border-width: 0px 0 0px;
 .popup-background{
     height: 100vh;
     width: 100vw;
-    background: rgba(0,0,0,95);
-    z-index: 0;
+    background: rgba(0,0,0,1);
+    z-index: 12;
+    opacity: .95;
     cursor: pointer;
 }
 
@@ -694,6 +725,19 @@ img {
     opacity: 1;
     display: block; 
     }
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    transition: filter 1s;
+    margin-bottom: 2em;
+}
+
+/*
+img.lazyload {
+    width: 100%;
+    filter: blur(15px);
+}
+*/
 
 /*
 img.bw {
@@ -772,7 +816,24 @@ iframe.bw:hover {
 .project-readmore span{
     letter-spacing: 0.005em;
 }
+.sdc-expand{
+    overflow: hidden;
+    visibility: hidden;
+    opacity:0;
+    height: 0;
+    -webkit-transition:  0.3s ease;
+    transition:  0.3s ease;
+    will-change: transform;
+}
 
+.sdc-expand.open{
+    opacity: 1;
+    visibility: visible;
+    height: 160px;
+    -webkit-transition:  0.3s ease;
+    transition:  0.3s ease;
+    will-change: transform;
+}
 .exposure-expand{
     overflow: hidden;
     visibility: hidden;
@@ -936,6 +997,17 @@ iframe.bw:hover {
     margin-left: -1px;
     }
 
+.col-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    width: 40%;
+    padding: 0 1.5%;
+    min-height: 50rem;
+    margin-bottom: 1.5em;
+    margin-left: -1px;
+    }
 
 
 .col-7 {
@@ -946,6 +1018,9 @@ iframe.bw:hover {
 
 @media only screen and (max-width: 768px) {
 .col-3 {
+    width: 50%; } 
+    
+.col-4 {
     width: 50%; } 
 
 .col-7 {
