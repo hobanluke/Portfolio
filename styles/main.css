@@ -870,6 +870,42 @@ iframe.bw:hover {
     transition:  0.3s ease;
     will-change: transform;
 }
+.kaldor-expand{
+    overflow: hidden;
+    visibility: hidden;
+    opacity:0;
+    height: 0;
+    -webkit-transition:  0.3s ease;
+    transition:  0.3s ease;
+    will-change: transform;
+}
+
+.kaldor-expand.open{
+    opacity: 1;
+    visibility: visible;
+    height: 200px;
+    -webkit-transition:  0.3s ease;
+    transition:  0.3s ease;
+    will-change: transform;
+}
+.australia-house-expand{
+    overflow: hidden;
+    visibility: hidden;
+    opacity:0;
+    height: 0;
+    -webkit-transition:  0.3s ease;
+    transition:  0.3s ease;
+    will-change: transform;
+}
+
+.australia-house-expand.open{
+    opacity: 1;
+    visibility: visible;
+    height: 200px;
+    -webkit-transition:  0.3s ease;
+    transition:  0.3s ease;
+    will-change: transform;
+}
 .pike-expand{
     overflow: hidden;
     visibility: hidden;
@@ -1152,14 +1188,6 @@ iframe.bw:hover {
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .col-10 {
-    min-height: 28rem;
-    width: calc(100% - 40px);
-    padding: 0 0%;
-    left: 20px;
-    } }
-
 .col-12 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1168,8 +1196,19 @@ iframe.bw:hover {
     padding: 0 1.5%;
     min-height: 58rem;
     margin-bottom: 20em;
-    margin-left: -1px;
     }
+.margins{
+    margin: 0 20px 0 20px;
+    width: calc(100% - 80px);
+}
+
+@media only screen and (max-width: 480px) {
+    .col-10 {
+    min-height: 28rem;
+    width: calc(100% - 40px);
+    padding: 0 0%;
+    left: 20px;
+    } }
 
 @media only screen and (max-width: 1089px) {
 .col-12 {

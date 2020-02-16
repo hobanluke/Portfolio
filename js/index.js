@@ -44,6 +44,20 @@ $('#tcf-link').click(function() {
           return text === "+ More Info" ? "– Close Info" : "+ More Info";
       })
   });
+$('#kaldor-link').click(function() {
+   $(this).toggleClass('active');
+    $('.kaldor-expand').toggleClass('open');
+    $('#kaldor-link').toggleClass('open');    $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+$('#australia-house-link').click(function() {
+   $(this).toggleClass('active');
+    $('.australia-house-expand').toggleClass('open');
+    $('#australia-house-link').toggleClass('open');    $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
 $('#pike-link').click(function() {
    $(this).toggleClass('active');
     $('.pike-expand').toggleClass('open');
