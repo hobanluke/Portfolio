@@ -1208,7 +1208,51 @@ iframe.bw:hover {
     width: calc(100% - 40px);
     padding: 0 0%;
     left: 20px;
-    } }
+    } 
+.offset-1 {
+  margin-left: 0%;
+}
+
+.offset-2 {
+  margin-left: 0%;
+}
+
+.offset-3 {
+  margin-left: 0%;
+}
+
+.offset-4 {
+  margin-left: 0%;
+}
+
+.offset-5 {
+  margin-left: 0%;
+}
+
+.offset-6 {
+  margin-left: 0%;
+}
+
+.offset-7 {
+  margin-left: 0%;
+}
+
+.offset-8 {
+  margin-left: 0%;
+}
+
+.offset-9 {
+  margin-left: 0%;
+}
+
+.offset-10 {
+  margin-left: 0%;
+}
+
+.offset-11 {
+  margin-left: 0%;
+}
+}
 
 @media only screen and (max-width: 1089px) {
 .col-12 {
