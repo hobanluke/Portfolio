@@ -23,6 +23,13 @@ $('.popup-section').click(function() {
     $('html').removeClass('open');
   });
 
+$('#rare-link').click(function() {
+   $(this).toggleClass('active');
+    $('.rare-expand').toggleClass('open');
+    $('#sdc-link').toggleClass('open');    $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
 $('#sdc-link').click(function() {
    $(this).toggleClass('active');
     $('.sdc-expand').toggleClass('open');

@@ -816,6 +816,24 @@ iframe.bw:hover {
 .project-readmore span{
     letter-spacing: 0.005em;
 }
+.rare-expand{
+    overflow: hidden;
+    visibility: hidden;
+    opacity:0;
+    height: 0;
+    -webkit-transition:  0.3s ease;
+    transition:  0.3s ease;
+    will-change: transform;
+}
+
+.rare-expand.open{
+    opacity: 1;
+    visibility: visible;
+    height: 160px;
+    -webkit-transition:  0.3s ease;
+    transition:  0.3s ease;
+    will-change: transform;
+}
 .sdc-expand{
     overflow: hidden;
     visibility: hidden;
@@ -1527,3 +1545,10 @@ progress[value]::-webkit-progress-bar {
 .padding50{
     padding-top: 50px
 }
+
+/*
+.padding50-side {
+    margin-left: 50px;
+    padding-right: 50px;
+    width: 40%;
+}*/
