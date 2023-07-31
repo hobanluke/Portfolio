@@ -1,0 +1,160 @@
+@font-face  {
+    font-family: 'Neue Haas Grotesk Text Pro';
+    src: url(../assets/NHaasGroteskTXPro-75Bd.woff2)  format('woff2');
+    font-style: bold;
+    font-weight: 700
+}
+
+h1, h2, h3, h4, h5, h6 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-weight : normal; 
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-family: 'Neue Haas Grotesk Text Pro', "Helvetica", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 280px;
+    line-height: 0.88em;
+    pointer-events: none;
+}
+
+h1 span{
+    letter-spacing: -0.1em;
+}
+
+h2 {
+    font-family: 'Helvetica', 'Neue Haas Grotesk Text Pro', "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.08333333333em;
+}
+
+h2 indent{
+    padding-left: 32px;
+    display: inline-block;
+}
+
+h2 span{
+    letter-spacing: -0.075em;
+}
+
+.type-heading {
+    letter-spacing: -0.035em;
+    color: #E3E3E3; 
+}
+
+.type-body {
+    letter-spacing: -0.02em;
+    color: #E3E3E3;
+}
+
+.type-body-uppercase {
+    text-transform: uppercase;
+    letter-spacing: 0em;
+    color: #E3E3E3; 
+}
+
+.type-body-disabled {
+    letter-spacing: -0.02em;
+    color: #727272;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+@media screen and (min-width: 0px) and (max-width: 369px) {
+    h1 {
+        letter-spacing: -0.03em;
+        line-height: 65px;
+        font-size: 72px;
+    } 
+    h2 {
+        font-size: 11px;
+    }
+    h2 indent{
+        padding-left: 24px;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 370px) and (max-width: 412px) {
+    h1 {
+        letter-spacing: -0.03em;
+        font-size: 86px;
+    } 
+    h2 {
+        font-size: 11px;
+    }
+    h2 indent{
+        padding-left: 24px;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 413px) and (max-width: 539px) {
+    h1 {
+        letter-spacing: -0.03em;
+        font-size: 96px;
+    } 
+    h2 {
+        font-size: 11px;
+    }
+    h2 indent{
+        padding-left: 24px;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 649px) {
+    h1 {
+        letter-spacing: -0.04em;
+        font-size: 110px;
+    }  
+    h2 {
+        font-size: 11px;
+    }
+    h2 indent{
+        padding-left: 24px;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 799px) {
+    h1 {
+        letter-spacing: -0.04em;
+        font-size: 160px;
+    }   
+}
+
+@media screen and (min-width: 800px) and (max-width: 1089px) {
+    h1 {
+        letter-spacing: -0.04em;
+        font-size: 190px;
+    }       
+}
+
+@media screen and (min-width: 1090px) and (max-width: 1300px) {
+    h1 {
+        letter-spacing: -0.04em;
+        font-size: 250px;
+    }       
+}
+
+@media screen and (min-width: 1650px) and (max-width: 1900px) {
+    h1 {
+        letter-spacing: -0.04em;
+        font-size: 300px;
+    } 
+}
+
+@media screen and (min-width: 1901px) and (max-width: 9999999px) {
+    h1 {
+        letter-spacing: -0.04em;
+        font-size: 380px;
+    }  
+}

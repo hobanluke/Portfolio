@@ -1,0 +1,399 @@
+.accordion-expand_hyeja-skincare {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_hyeja-skincare.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_webbs-auction-house-1 {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_webbs-auction-house-1.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_art-news-aotearoa {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_art-news-aotearoa.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_webbs-auction-house-2 {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_webbs-auction-house-2.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_reome {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_reome.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_yu-mei {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_yu-mei.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_kye-intimates {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_kye-intimates.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_danny-kaplan-studio {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_danny-kaplan-studio.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_guy-morgan {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_guy-morgan.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_rare-with-google {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_rare-with-google.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_luckyme {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_luckyme.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_sydney-dance-company {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_sydney-dance-company.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_kaldor-public-art-projects {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_kaldor-public-art-projects.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_exposure-exhibition {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_exposure-exhibition.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_henri-matisse-the-cut-outs {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_henri-matisse-the-cut-outs.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_nuclear-tests {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_nuclear-tests.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+#hyeja-skincare_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#webbs-auction-house-1_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#art-news-aotearoa_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#webbs-auction-house-2_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#reome_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#yu-mei_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#kye-intimates_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#danny-kaplan-studio_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#guy-morgan_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#rare-with-google_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#luckyme_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#sydney-dance-company_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#kaldor-public-art-projects_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#exposure-exhibition_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#henri-matisse-the-cut-outs_link{
+    opacity: 1;
+    will-change: transform; 
+}
+
+#nuclear-tests_link{
+    opacity: 1;
+    will-change: transform; 
+}
