@@ -34,6 +34,14 @@ $('#art-news-aotearoa_link').click(function() {
       })
   });
 
+$('#semi-creative_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_semi-creative').toggleClass('open');
+    $('#semi-creative_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
 $('#webbs-auction-house-2_link').click(function() {
    $(this).toggleClass('active');
     $('.accordion-expand_webbs-auction-house-2').toggleClass('open');
