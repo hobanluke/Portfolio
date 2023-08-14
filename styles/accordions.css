@@ -218,6 +218,26 @@
     will-change: transform;
 }
 
+.accordion-expand_romance-was-born {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_romance-was-born.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
 .accordion-expand_luckyme {
     position: relative;
     overflow: hidden;

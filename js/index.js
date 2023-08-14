@@ -98,6 +98,14 @@ $('#rare-with-google_link').click(function() {
       })
   });
 
+$('#romance-was-born_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_romance-was-born').toggleClass('open');
+    $('#romance-was-born_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
 $('#luckyme_link').click(function() {
    $(this).toggleClass('active');
     $('.accordion-expand_luckyme').toggleClass('open');
