@@ -50,6 +50,14 @@ $('#webbs-auction-house-2_link').click(function() {
       })
   });
 
+$('#sans-ceuticals_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_sans-ceuticals').toggleClass('open');
+    $('#sans-ceuticals_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
 $('#reome_link').click(function() {
    $(this).toggleClass('active');
     $('.accordion-expand_reome').toggleClass('open');
