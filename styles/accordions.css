@@ -1,3 +1,23 @@
+.accordion-expand_baina {
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
+.accordion-expand_baina.open{
+    opacity: 1;
+    visibility: visible;
+    height: 120px;
+    -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    transition: all 0.6s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+
 .accordion-expand_hyeja-skincare {
     position: relative;
     overflow: hidden;
@@ -376,6 +396,11 @@
     -webkit-transition: all 0.6s cubic-bezier(.4,0,.2,1);
     transition: all 0.6s cubic-bezier(.4,0,.2,1);
     will-change: transform;
+}
+
+#baina_link{
+    opacity: 1;
+    will-change: transform; 
 }
 
 #hyeja-skincare_link{

@@ -10,6 +10,14 @@ $('.menu').click(function() {
     $('html').removeClass('open');
   });
 
+$('#baina_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_baina').toggleClass('open');
+    $('#baina_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
 $('#hyeja-skincare_link').click(function() {
    $(this).toggleClass('active');
     $('.accordion-expand_hyeja-skincare').toggleClass('open');
