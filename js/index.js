@@ -10,6 +10,14 @@ $('.menu').click(function() {
     $('html').removeClass('open');
   });
 
+$('#1of1-studio_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_1of1-studio').toggleClass('open');
+    $('#1of1-studio_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
 $('#baina_link').click(function() {
    $(this).toggleClass('active');
     $('.accordion-expand_baina').toggleClass('open');
