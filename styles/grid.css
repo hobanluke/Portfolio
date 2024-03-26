@@ -57,6 +57,7 @@
 .paddingBottom80  {padding-bottom: 80px;}
 .paddingBottom120 {padding-bottom: 120px;}
 .paddingBottom200 {padding-bottom: 200px;}
+.paddingBottom240 {padding-bottom: 200px;}
 .paddingBottom300 {padding-bottom: 300px;}
 
 .padding4    {width: 4px;  display: inline-block;}
@@ -149,6 +150,7 @@
     .paddingBottom80  {padding-bottom: 64px;}
     .paddingBottom120 {padding-bottom: 80px;}
     .paddingBottom200 {padding-bottom: 120px;}
+    .paddingBottom240 {padding-bottom: 160px;}
     .paddingBottom300 {padding-bottom: 240px;}
     
     .padding16   {width: 8px;  display: inline-block;}
