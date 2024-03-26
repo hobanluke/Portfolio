@@ -50,6 +50,14 @@ $('#art-news-aotearoa_link').click(function() {
       })
   });
 
+$('#non-standard_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_non-standard').toggleClass('open');
+    $('#non-standard_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
 $('#semi-creative_link').click(function() {
    $(this).toggleClass('active');
     $('.accordion-expand_semi-creative').toggleClass('open');
