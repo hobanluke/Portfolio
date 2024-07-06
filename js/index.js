@@ -10,6 +10,14 @@ $('.menu').click(function() {
     $('html').removeClass('open');
   });
 
+$('#alex-hunting-studio_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_alex-hunting-studio').toggleClass('open');
+    $('#alex-hunting-studio_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
 $('#1of1-studio_link').click(function() {
    $(this).toggleClass('active');
     $('.accordion-expand_1of1-studio').toggleClass('open');
