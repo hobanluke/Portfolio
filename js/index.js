@@ -10,6 +10,14 @@ $('.menu').click(function() {
     $('html').removeClass('open');
   });
 
+$('#nader-grammas_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_nader-grammas').toggleClass('open');
+    $('#nader-grammas_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
 $('#alex-hunting-studio_link').click(function() {
    $(this).toggleClass('active');
     $('.accordion-expand_alex-hunting-studio').toggleClass('open');
