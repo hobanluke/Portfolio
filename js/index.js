@@ -10,6 +10,14 @@ $('.menu').click(function() {
     $('html').removeClass('open');
   });
 
+$('#literary-sport_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_literary-sport').toggleClass('open');
+    $('#literary-sport_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
 $('#nader-grammas_link').click(function() {
    $(this).toggleClass('active');
     $('.accordion-expand_nader-grammas').toggleClass('open');
