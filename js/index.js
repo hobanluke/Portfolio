@@ -10,6 +10,14 @@ $('.menu').click(function() {
     $('html').removeClass('open');
   });
 
+$('#ne-geurra_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_ne-geurra').toggleClass('open');
+    $('#ne-geurra_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
 $('#literary-sport_link').click(function() {
    $(this).toggleClass('active');
     $('.accordion-expand_literary-sport').toggleClass('open');
