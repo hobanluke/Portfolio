@@ -10,6 +10,14 @@ $('.menu').click(function() {
     $('html').removeClass('open');
   });
 
+$('#handcrafted-modern_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_handcrafted-modern').toggleClass('open');
+    $('#handcrafted-modern_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
 $('#ne-geurra_link').click(function() {
    $(this).toggleClass('active');
     $('.accordion-expand_ne-geurra').toggleClass('open');
