@@ -10,6 +10,14 @@ $('.menu').click(function() {
     $('html').removeClass('open');
   });
 
+$('#mig_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_mig').toggleClass('open');
+    $('#mig_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
 $('#handcrafted-modern_link').click(function() {
    $(this).toggleClass('active');
     $('.accordion-expand_handcrafted-modern').toggleClass('open');
