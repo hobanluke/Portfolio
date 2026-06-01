@@ -10,6 +10,22 @@ $('.menu').click(function() {
     $('html').removeClass('open');
   });
 
+$('#koppen_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_koppen').toggleClass('open');
+    $('#koppen_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
+$('#lesse_link').click(function() {
+   $(this).toggleClass('active');
+    $('.accordion-expand_lesse').toggleClass('open');
+    $('#lesse_link').toggleClass('open'); $(this).text(function(i, text){
+          return text === "+ More Info" ? "– Close Info" : "+ More Info";
+      })
+  });
+
 $('#mig_link').click(function() {
    $(this).toggleClass('active');
     $('.accordion-expand_mig').toggleClass('open');
